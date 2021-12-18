@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-top: 7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#dfac6c), color-stop(#F79824), to(#F79824));
+  background: linear-gradient(transparent, #dfac6c, #F79824, #F79824);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#00c6ff));
+  background: linear-gradient(transparent, #00c6ff);
+}
+
+/*********************Navbar **********************/
+.header body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow: hidden;
+}
+
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 7vw;
+  line-height: 1;
+  color: #ffeba7;
+  text-align: center;
+  -webkit-text-stroke: 2px #ffeba7;
+  text-stroke: 2px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+}
+
+.header [type="checkbox"]:checked,
+.header [type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.header .menu-icon:checked + label,
+.header .menu-icon:not(:checked) + label {
+  position: fixed;
+  top: 63px;
+  right: 75px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.header .menu-icon:checked + label:before,
+.header .menu-icon:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 20px;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #ececee;
+  border-bottom: 2px solid #ececee;
+  -webkit-transition: border-width 100ms 1500ms ease, top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-width 100ms 1500ms ease, top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-width 100ms 1500ms ease, top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-width 100ms 1500ms ease, top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header .menu-icon:checked + label:after,
+.header .menu-icon:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  z-index: 20;
+  top: 10px;
+  right: 4px;
+  background-color: #ececee;
+  margin-top: -1px;
+  -webkit-transition: width 100ms 1750ms ease, right 100ms 1750ms ease, margin-top 100ms ease, -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: width 100ms 1750ms ease, right 100ms 1750ms ease, margin-top 100ms ease, -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: width 100ms 1750ms ease, right 100ms 1750ms ease, margin-top 100ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: width 100ms 1750ms ease, right 100ms 1750ms ease, margin-top 100ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header .menu-icon:checked + label:before {
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 2px;
+  background-color: #ececee;
+  border-width: 0;
+  -webkit-transition: border-width 100ms 340ms ease, top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease, -webkit-transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-width 100ms 340ms ease, top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease, -webkit-transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-width 100ms 340ms ease, top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease, transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-width 100ms 340ms ease, top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease, transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header .menu-icon:checked + label:after {
+  width: 30px;
+  margin-top: 0;
+  right: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease, -webkit-transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease, -webkit-transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease, transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease, transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header .nav {
+  position: fixed;
+  top: 33px;
+  right: 50px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  z-index: 9;
+  overflow: hidden;
+  -webkit-box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
+  background-color: #F79824;
+  -webkit-animation: border-transform 7s linear infinite;
+          animation: border-transform 7s linear infinite;
+  -webkit-transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 250ms 1100ms ease;
+  transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 250ms 1100ms ease;
+  transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 250ms 1100ms ease;
+}
+
+@-webkit-keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+.header .menu-icon:checked ~ .nav {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 200%;
+  height: 200%;
+  -webkit-transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1), height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 250ms 700ms ease;
+  transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1), height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 250ms 700ms ease;
+  transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 700ms ease, width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1), height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 700ms ease, width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1), height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 250ms 700ms ease;
+}
+
+.header .nav ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  list-style: none;
+}
+
+.header .nav ul li {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+  list-style: none;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+.header .nav ul li:nth-child(1) {
+  -webkit-transition-delay: 249ms;
+          transition-delay: 249ms;
+}
+
+.header .nav ul li:nth-child(2) {
+  -webkit-transition-delay: 248ms;
+          transition-delay: 248ms;
+}
+
+.header .nav ul li:nth-child(3) {
+  -webkit-transition-delay: 247ms;
+          transition-delay: 247ms;
+}
+
+.header .nav ul li:nth-child(4) {
+  -webkit-transition-delay: 246ms;
+          transition-delay: 246ms;
+}
+
+.header .nav ul li:nth-child(5) {
+  -webkit-transition-delay: 245ms;
+          transition-delay: 245ms;
+}
+
+.header .nav ul li:nth-child(6) {
+  -webkit-transition-delay: 244ms;
+          transition-delay: 244ms;
+}
+
+.header .nav ul li:nth-child(7) {
+  -webkit-transition-delay: 243ms;
+          transition-delay: 243ms;
+}
+
+.header .nav ul li:nth-child(8) {
+  -webkit-transition-delay: 242ms;
+          transition-delay: 242ms;
+}
+
+.header .nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 800;
+  display: inline-block;
+  position: relative;
+  color: #ececee;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+.header .nav ul li a:hover {
+  text-decoration: none;
+  color: #ffeba7;
+}
+
+.header .nav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 60%;
+  content: "";
+  height: 1vh;
+  margin-top: -1vh;
+  width: 0;
+  left: 0;
+  background-color: #353746;
+  opacity: 0.8;
+  -webkit-transition: width 250ms linear;
+  transition: width 250ms linear;
+}
+
+.header .nav ul li a:hover:after {
+  width: 100%;
+}
+
+.header .menu-icon:checked ~ .nav ul li {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 350ms ease, -webkit-transform 250ms ease;
+  transition: opacity 350ms ease, -webkit-transform 250ms ease;
+  transition: opacity 350ms ease, transform 250ms ease;
+  transition: opacity 350ms ease, transform 250ms ease, -webkit-transform 250ms ease;
+}
+
+.header .menu-icon:checked ~ .nav ul li:nth-child(1) {
+  -webkit-transition-delay: 1360ms;
+          transition-delay: 1360ms;
+}
+
+.header .menu-icon:checked ~ .nav ul li:nth-child(2) {
+  -webkit-transition-delay: 1320ms;
+          transition-delay: 1320ms;
+}
+
+.header .menu-icon:checked ~ .nav ul li:nth-child(3) {
+  -webkit-transition-delay: 1280ms;
+          transition-delay: 1280ms;
+}
+
+.header .menu-icon:checked ~ .nav ul li:nth-child(4) {
+  -webkit-transition-delay: 1240ms;
+          transition-delay: 1240ms;
+}
+
+.header .menu-icon:checked ~ .nav ul li:nth-child(5) {
+  -webkit-transition-delay: 1200ms;
+          transition-delay: 1200ms;
+}
+
+.header .menu-icon:checked ~ .nav ul li:nth-child(6) {
+  -webkit-transition-delay: 1160ms;
+          transition-delay: 1160ms;
+}
+
+.header .menu-icon:checked ~ .nav ul li:nth-child(7) {
+  -webkit-transition-delay: 1120ms;
+          transition-delay: 1120ms;
+}
+
+.header .menu-icon:checked ~ .nav ul li:nth-child(8) {
+  -webkit-transition-delay: 1080ms;
+          transition-delay: 1080ms;
+}
+
+.header .logo {
+  position: absolute;
+  top: 1.7rem;
+  left: 50px;
+  display: block;
+  z-index: 11;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+.header .logo img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .header .menu-icon:checked + label,
+  .header .menu-icon:not(:checked) + label {
+    right: 55px;
+  }
+  .header .logo {
+    left: 30px;
+  }
+  .header .nav {
+    right: 30px;
+  }
+  .header h1 {
+    font-size: 9vw;
+    -webkit-text-stroke: 2px transparent;
+    text-stroke: 2px transparent;
+    -webkit-text-fill-color: #ffeba7;
+    text-fill-color: #ffeba7;
+    color: #ffeba7;
+  }
+  .header .nav ul li a {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/************************Home ***************************/
+.home .home-video {
+  position: relative;
+  width: 100%;
+  background: black;
+  min-height: 90vh;
+  top: -7rem;
+  border-radius: 0% 0% 10% 14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home .home-video video {
+  width: 100%;
+  border-radius: 0% 0% 10% 14%;
+}
+
+.home .home-video-mute, .home .home-video-unmute {
+  position: absolute;
+  border-radius: 50%;
+  bottom: 3rem;
+  right: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #F79824;
+  color: #F79824;
+}
+/*# sourceMappingURL=index.css.map */
