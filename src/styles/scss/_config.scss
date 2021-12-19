@@ -11,6 +11,13 @@ body{
   background-color: #212121;
 }
 
+.loader{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main{
     margin-top: 7rem;
     // padding: 0.6em;
@@ -46,7 +53,7 @@ a{
 }
 
 $primary-color: #F79824;
-
+$text-color: #31393c;
 
 ::-webkit-scrollbar {
   width: 5px;

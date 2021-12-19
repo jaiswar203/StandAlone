@@ -1,28 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import Typist from 'react-typist'
-
-
-
-import Visible from './Visible'
-import HeadingAOS from './HeadingAOS'
+import { HeadingAOS, Visible } from "./hooks"
 
 const About = () => {
     const [isVis, setIsVis] = useState(false)
     const [comp1, setComp1] = useState(false)
     console.log(true)
     useEffect(() => {
-        
+
     }, [isVis])
     return (
         <>
             <div className="home-about">
-                <div className="home-about-heading">
-                    <HeadingAOS>About</HeadingAOS>
-                    
-                </div>
+                
+                    <HeadingAOS title={"about"}>About</HeadingAOS>
+                
                 <Visible setIsVis={setIsVis}>
                     <div className="home-about-section ">
-                        <div className="section " data-aos="zoom-in-up">
+                        <div className="section ">
                             <div className="section-image">
                                 <img src="https://dancemaster.in/demo/wp-content/uploads/2021/11/team_5.png" alt="" data-aos="zoom-out-down" />
                             </div>

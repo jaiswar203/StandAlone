@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from 'react'
 import Movies from './Movies'
 import About from './About'
 import MidVid from './MidVid'
+import Upcoming from './Upcoming'
 
 const Home = () => {
     const [volume, setVolume] = useState(false)
@@ -61,6 +62,9 @@ const Home = () => {
             </div>
             <div className="home-midvid">
                 <MidVid />
+            </div>
+            <div className="home-upcoming">
+                <Upcoming />
             </div>
         </div>
 
