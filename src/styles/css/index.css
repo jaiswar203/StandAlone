@@ -748,4 +748,16 @@ a {
     font-size: 1.4rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .home-movies-card-center {
+    padding: 1rem;
+  }
+  .home-about-section {
+    padding: 1rem;
+  }
+  .home-midvid-video {
+    padding: 1rem;
+  }
+}
 /*# sourceMappingURL=index.css.map */

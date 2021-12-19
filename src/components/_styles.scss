@@ -520,4 +520,18 @@
       }
     }
   }
+  @media screen and (max-width:500px) {
+    &-movies-card-center{
+      padding: 1rem;
+    }
+
+    &-about-section{
+      padding: 1rem;
+    }
+
+    &-midvid-video{
+      padding: 1rem;
+    }
+  }
 }
+
