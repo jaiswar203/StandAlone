@@ -480,7 +480,7 @@ a {
   position: relative;
   width: 100%;
   background: black;
-  min-height: 55vh;
+  min-height: 91vh;
   top: -7rem;
   border-radius: 0% 0% 10% 14%;
   display: -webkit-box;
@@ -493,6 +493,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 950px) {
+  .home-video {
+    min-height: 55vh;
+  }
 }
 
 .home-video video {
@@ -928,6 +934,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     bottom: 2rem;
+    right: 2rem;
   }
   .home-upcoming .remaining p:first-child {
     margin-left: 2rem;

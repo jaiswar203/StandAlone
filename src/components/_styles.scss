@@ -324,7 +324,13 @@
     position: relative;
     width: 100%;
     background: black;
-    min-height: 55vh;
+    min-height: 91vh;
+
+    @media screen and (max-width:950px) {
+      &{
+        min-height: 55vh;
+      }
+    }
     top: -7rem;
     border-radius: 0% 0% 10% 14%;
     display: flex;
@@ -653,6 +659,7 @@
         &{
           flex-direction: column;
           bottom: 2rem;
+          right: 2rem;
           p:first-child{
             margin-left: 2rem;
           }
