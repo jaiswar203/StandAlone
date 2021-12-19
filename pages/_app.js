@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const [loading, setloading] = useState(false);
   useEffect(() => {
     setTimeout(() => {
-      setloading(false);
+      setloading(true);
     }, [4000]);
   }, [loading]);
   return (
