@@ -185,7 +185,7 @@ a {
   overflow: hidden;
   -webkit-box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
-  background-color: #F79824;
+  background-color: #f79824;
   -webkit-animation: border-transform 7s linear infinite;
           animation: border-transform 7s linear infinite;
   -webkit-transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 250ms 1100ms ease;
@@ -503,8 +503,8 @@ a {
           align-items: center;
   width: 3rem;
   height: 3rem;
-  border: 2px solid #F79824;
-  color: #F79824;
+  border: 2px solid #f79824;
+  color: #f79824;
 }
 
 .home-movies-heading {
@@ -539,8 +539,36 @@ a {
 }
 
 .home-movies .home-movies-cards-center-items img {
-  width: 50%;
+  width: 100%;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .home-movies .home-movies-cards-center-items img {
+    width: 60%;
+  }
+}
+
+.home-movies .home-movies-cards-center-items .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 540px) {
+  .home-movies .home-movies-cards-center-items .detail {
+    font-size: 0.8rem;
+  }
 }
 
 .home-about-heading {
@@ -615,7 +643,7 @@ a {
 }
 
 .home-about-section .section-detail p {
-  color: #31393C;
+  color: #31393c;
   font-size: 1.2rem;
 }
 
@@ -624,9 +652,18 @@ a {
 }
 
 .home-about-section .section-detail h3 {
-  color: #2176FF;
+  color: #2176ff;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .home-about-section .section-detail p {
+    font-size: 1rem;
+  }
+  .home-about-section .section-detail h3 {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -639,6 +676,76 @@ a {
   .home-about-section .section-detail {
     margin-top: 2rem;
     width: 88%;
+  }
+}
+
+.home-midvid-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.home-midvid-video {
+  border-radius: 20px;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-midvid-video video {
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: drop-shadow(1rem 1rem 1rem black);
+          filter: drop-shadow(1rem 1rem 1rem black);
+  border-radius: 1rem;
+}
+
+.home-midvid-video-detail {
+  position: relative;
+  width: 65%;
+  padding: 1rem;
+  bottom: 10rem;
+  color: #F79824;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
+
+@media screen and (min-width: 630px) and (max-width: 890px) {
+  .home-midvid-video-detail {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 629px) {
+  .home-midvid-video-detail p {
+    display: none;
+  }
+  .home-midvid-video-detail {
+    bottom: 7rem;
+  }
+  .home-midvid-video-detail h1 {
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

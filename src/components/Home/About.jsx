@@ -1,23 +1,24 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Typist from 'react-typist'
-import Aos from 'aos'
 
 
-import 'aos/dist/aos.css'
+
 import Visible from './Visible'
+import HeadingAOS from './HeadingAOS'
 
 const About = () => {
     const [isVis, setIsVis] = useState(false)
     const [comp1, setComp1] = useState(false)
-
+    console.log(true)
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        
     }, [isVis])
     return (
         <>
             <div className="home-about">
                 <div className="home-about-heading">
-                    <h1 data-aos="fade-up">About</h1>
+                    <HeadingAOS>About</HeadingAOS>
+                    
                 </div>
                 <Visible setIsVis={setIsVis}>
                     <div className="home-about-section ">
