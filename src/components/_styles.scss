@@ -2,9 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
-$primary-color: red;
-$secondary-color: blue;
-$dark: black;
 .header {
   body {
     font-family: "Montserrat", sans-serif;
@@ -307,7 +304,7 @@ $dark: black;
 /************************Home ***************************/
 
 .home {
-  .home-video {
+  &-video {
     position: relative;
     width: 100%;
     background: black;
@@ -335,6 +332,104 @@ $dark: black;
       height: 3rem;
       border: 2px solid #F79824;
       color: #F79824;
+    }
+  }
+
+  &-movies{
+    &-heading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1{
+        color: white;
+      }
+    }
+
+    &-cards{
+      padding: 3rem;
+      width: 100%;
+    }
+    
+    .home-movies-cards-center{
+        background-color: $primary-color;
+        border-radius: 20px;
+        padding: 3rem;
+        &-items{
+          width: 1rem;
+          img{
+            width: 50%;
+            border-radius: 20px;
+          }
+        }
+
+
+    }
+  }
+  &-about{
+    &-heading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:  white;
+    }
+
+    &-section{
+      padding: 3rem; 
+      .section{
+        border-radius: 20px;
+        width: 100%;
+        padding: 2rem;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        
+        &-image{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 80%;
+            border-radius:50% ;
+          }
+        }
+
+        &-detail{
+          width: 58%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items:flex-start;
+
+          p{
+            color: #31393C;
+            font-size: 1.2rem;
+          }
+          &>*{
+            margin-bottom: 1rem;
+          }
+
+          h3{
+            color: #2176FF;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+        }
+
+        @media screen and (max-width:820px) {
+          &{
+            flex-direction: column;
+
+            &-detail{
+              margin-top: 2rem;
+              width: 88%;
+            }
+          }
+        }
+      }
     }
   }
 }
