@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import { HashLoader } from "react-spinners";
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setloading] = useState(false);
+  const [loading, setloading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      setloading(true);
+      setloading(false);
     }, [4000]);
   }, [loading]);
   return (
