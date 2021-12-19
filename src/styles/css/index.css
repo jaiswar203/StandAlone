@@ -750,7 +750,7 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .home-movies-card-center {
+  .home-movies-cards {
     padding: 1rem;
   }
   .home-about-section {
