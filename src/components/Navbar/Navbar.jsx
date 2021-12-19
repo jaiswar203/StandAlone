@@ -5,7 +5,7 @@ import Logo from '../../images/logo.png'
 const Navbar = () => {
     return (
         <header className="header">
-            <a href="/" className="logo" >
+            <a href="www.google.com" className="logo" >
                 <Image src={Logo} />
             </a>
             <input
