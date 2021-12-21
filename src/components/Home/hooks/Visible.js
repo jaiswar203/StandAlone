@@ -3,7 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Visible = ({ children, setIsVis, run = true }) => {
+const Visible = ({ children, setIsVis, run = true, aos = true }) => {
   const onChan = (isVisible) => {
     if (run) {
       if (isVisible) {
@@ -13,13 +13,17 @@ const Visible = ({ children, setIsVis, run = true }) => {
   };
   useEffect(() => {
     Aos.init();
-  }, []);
+  }, [setIsVis]);
   return (
     <>
       <ReactVisibilitySensor onChange={onChan}>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" >
-          {children}
-        </div>
+        {aos ? (
+          <div data-aos="zoom-in-up" data-aos-duration="2000">
+            {children}
+          </div>
+        ) : (
+          <div>{children}</div>
+        )}
       </ReactVisibilitySensor>
     </>
   );

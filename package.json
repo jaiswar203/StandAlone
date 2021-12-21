@@ -10,23 +10,24 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "animejs": "^3.2.1",
     "aos": "^2.3.4",
     "next": "12.0.7",
+    "node-sass": "^6.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
     "react-spinners": "^0.11.0",
     "react-typist": "^2.0.5",
     "react-visibility-sensor": "^5.1.1",
     "react-visibility-sensor-v2": "^1.0.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
     "swiper": "^7.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
-    "@storybook/addon-actions": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
-    "@storybook/addon-links": "^6.4.9",
-    "@storybook/react": "^6.4.9",
     "babel-loader": "^8.2.3",
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",

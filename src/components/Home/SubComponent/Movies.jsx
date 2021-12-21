@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
     EffectCoverflow, Pagination
 } from 'swiper';
-import { HeadingAOS, Visible } from './hooks';
+import { HeadingAOS, Visible } from '../hooks';
 
 import "swiper/css";
 import "swiper/css/effect-coverflow"
@@ -22,6 +22,7 @@ const Movies = () => {
         "640": {
             slidesPerView: 3,
         },
+        
 
     }
     return (
@@ -31,13 +32,15 @@ const Movies = () => {
             <Visible run={false}>
                 <div className="home-movies-cards">
                     <div className="home-movies-cards-center">
-                        <Swiper effect={'coverflow'} grabCursor={true} breakpoints={breakpoints} centeredSlides={true} slidesPerView={1} coverflowEffect={{
+                        <Swiper effect={'coverflow'}  grabCursor={true} breakpoints={breakpoints} centeredSlides={true} slidesPerView={1} coverflowEffect={{
                             "rotate": 50,
                             "stretch": 0,
                             "depth": 100,
                             "modifier": 1,
                             "slideShadows": false
-                        }} pagination={false} className="mySwiper" loop={true}>
+                        }} pagination={false} className="mySwiper" loop={true}
+                        onActiveIndexChange={(en)=>console.log(en.activeIndex,'slide Changed')}
+                        >
                             <SwiperSlide className='home-movies-cards-center-items' >
                                 <img src="https://dancemaster.in/demo/wp-content/uploads/2021/11/latest-realse-1-768x768.jpg" />
                                 <div className="detail">

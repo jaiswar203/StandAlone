@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Typist from 'react-typist'
-import { HeadingAOS, Visible } from "./hooks"
+import { HeadingAOS, Visible } from "../hooks"
 
 const About = () => {
     const [isVis, setIsVis] = useState(false)
     const [comp1, setComp1] = useState(false)
-    console.log(true)
+    
     useEffect(() => {
 
     }, [isVis])

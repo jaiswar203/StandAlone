@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
 }
 
+$primary-color: #F79824;
+$text-color: #31393c;
 body{
   background-color: #212121;
+
+  
 }
 
 .loader{
@@ -20,7 +24,9 @@ body{
 
 main{
     margin-top: 7rem;
-    // padding: 0.6em;
+    &.hide{
+      filter: blur(5px);
+    }
 }
 
 a{
@@ -52,8 +58,6 @@ a{
   }
 }
 
-$primary-color: #F79824;
-$text-color: #31393c;
 
 ::-webkit-scrollbar {
   width: 5px;

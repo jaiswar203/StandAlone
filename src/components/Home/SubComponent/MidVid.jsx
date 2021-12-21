@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { HeadingAOS, Visible } from "./hooks"
+import { HeadingAOS, Visible } from "../hooks"
 import Typist from "react-typist"
 
 const MidVid = () => {
