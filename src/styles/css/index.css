@@ -1135,6 +1135,10 @@ a {
   text-align: center;
 }
 
+.footer-detail-number a {
+  color: #31393c;
+}
+
 .footer-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1146,5 +1150,30 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+  .footer-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-link > * {
+    margin-bottom: 0.3rem;
+  }
+  .footer-copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer-copyright > * {
+    margin-top: 1rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -39,7 +39,7 @@ const Footer = () => {
                     <p>710 EAST COMMERCIAL STREET, LOS ANGELES, CA 90012 | 10A, GURUNAGAR SOCIETY, J P ROAD, FOUR BUNGALOW, ANDHERI (W) MUMBAI</p>
                 </div>
                 <div className="footer-detail-number">
-                    <a href="tel:">+918838838384</a>
+                    <a href="tel:">+918838838384</a> || <a href="tel:">+918838838384</a> 
                 </div>
             </div>
             <div className="footer-copyright">

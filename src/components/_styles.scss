@@ -808,11 +808,36 @@
     &-address {
       text-align: center;
     }
+    &-number{
+      a{
+        color: $text-color;
+      }
+    }
   }
   &-copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 720px) {
+    &{
+      font-size: 0.8rem;
+    }
+    &-link{
+      flex-direction: column;
+      &> *{
+        margin-bottom: 0.3rem;
+      }
+    }
+    &-copyright{
+      flex-direction: column;
+      text-align: center;
+
+      &>*{
+        margin-top: 1rem;
+      }
+    }
   }
 }
