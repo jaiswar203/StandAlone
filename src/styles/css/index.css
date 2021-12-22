@@ -569,7 +569,7 @@ a {
 
 @media screen and (min-width: 1100px) {
   .home-movies .home-movies-cards-center-items img {
-    width: 60%;
+    width: 100%;
   }
 }
 

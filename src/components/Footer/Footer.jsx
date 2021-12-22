@@ -1,6 +1,4 @@
-import Image from "next/image"
 import Link from "next/link"
-import Logo from '../../images/logo.png'
 
 const Footer = () => {
     return (

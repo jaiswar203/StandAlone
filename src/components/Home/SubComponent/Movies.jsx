@@ -22,6 +22,9 @@ const Movies = () => {
         "640": {
             slidesPerView: 3,
         },
+        "1000":{
+            slidesPerView: 4
+        }
         
 
     }
