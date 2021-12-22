@@ -13,13 +13,13 @@ const TestimmonialVideo = ({ link, iframe = false, setShow, show }) => {
                 <div className="video">
                     {
                         iframe ? (
-                            <iframe src={`https://www.youtube.com/embed/${link}`} frameborder="0" allowFullScreen></iframe>
+                            <iframe src={`https://www.youtube.com/embed/${link}`} frameBorder="0" allowFullScreen></iframe>
                         ) : (
                             <video src={link} autoPlay loop muted={false} controls />
                         )
                     }
                     <div className="video-cancel" onClick={() => setShow(false)}>
-                        <i class="fas fa-times"></i>
+                        <i className="fas fa-times" />
                     </div>
                 </div>
             </div>

@@ -44,7 +44,7 @@ const Testimonial = () => {
                                 <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828164/samples/bike.jpg"} width={560} height={320} />
                                 <div className="play-button" >
                                     <div className="play-button-circle" >
-                                        <i class="fas fa-play"></i>
+                                        <i className="fas fa-play"></i>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -52,7 +52,7 @@ const Testimonial = () => {
                                 <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828164/samples/bike.jpg"} width={560} height={320} />
                                 <div className="play-button" >
                                     <div className="play-button-circle" >
-                                        <i class="fas fa-play"></i>
+                                        <i className="fas fa-play"></i>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -60,7 +60,7 @@ const Testimonial = () => {
                                 <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828164/samples/bike.jpg"} width={560} height={320} />
                                 <div className="play-button" >
                                     <div className="play-button-circle" >
-                                        <i class="fas fa-play"></i>
+                                        <i className="fas fa-play"></i>
                                     </div>
                                 </div>
                             </SwiperSlide>

@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 
 const useIntersection = (vid,volume) => {
-    const run=(vid,volume)=>{
+    const Run=(vid,volume)=>{
         const callbackFuntion = (entries) => {
             entries.forEach((en) => {
                 if (!en.isIntersecting) {
@@ -32,7 +32,7 @@ const useIntersection = (vid,volume) => {
             }
         }, [volume])
     }
-    return run(vid,volume)
+    return Run(vid,volume)
 }
 
 export default useIntersection

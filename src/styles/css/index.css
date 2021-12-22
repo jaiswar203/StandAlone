@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -6,6 +5,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -973,8 +973,8 @@ a {
 }
 
 .home-testimonial-content-video {
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   background: green;
   position: fixed;
   top: 50%;
@@ -1057,5 +1057,94 @@ a {
   .home-midvid-video {
     padding: 1rem;
   }
+}
+
+.footer {
+  background: #F79824;
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding: 2rem;
+  margin-top: 10rem;
+}
+
+.footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+.footer-link > * {
+  margin-left: 1rem;
+  color: #31393c;
+}
+
+.footer-link > *:hover {
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  color: white;
+}
+
+.footer-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+}
+
+.footer-detail > * {
+  margin-bottom: 1rem;
+}
+
+.footer-detail-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-detail-icon-item {
+  padding: 0.5rem;
+  background-color: #31393c;
+  border-radius: 100%;
+  margin-left: 1rem;
+  color: #F79824;
+}
+
+.footer-detail-address {
+  text-align: center;
+}
+
+.footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

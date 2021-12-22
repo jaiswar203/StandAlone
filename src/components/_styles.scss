@@ -656,12 +656,12 @@
       background-color: $primary-color;
       padding: 3rem 1.5rem;
       border-radius: 20px;
-      video{
+      video {
         width: 100%;
       }
-      
+
       &-video {
-        transition: all .2s ease-out;
+        transition: all 0.2s ease-out;
         background: green;
         position: fixed;
         top: 50%;
@@ -670,11 +670,24 @@
         width: 80%;
         z-index: 12;
         padding: 1rem;
-        background-image: linear-gradient(to right bottom, #f79824, #e66e4a, #bd525e, #884460, #52384f, #3f3345, #302d37, #262628, #292a2d, #2c2f33, #2f3438, #31393c);
+        background-image: linear-gradient(
+          to right bottom,
+          #f79824,
+          #e66e4a,
+          #bd525e,
+          #884460,
+          #52384f,
+          #3f3345,
+          #302d37,
+          #262628,
+          #292a2d,
+          #2c2f33,
+          #2f3438,
+          #31393c
+        );
         border-radius: 20px;
-        .video{
-          
-          &-cancel{
+        .video {
+          &-cancel {
             position: absolute;
             background: $primary-color;
             padding: 1rem;
@@ -688,10 +701,10 @@
 
         video {
           border-radius: 20px;
-          width: 100%;  
+          width: 100%;
         }
 
-        iframe{
+        iframe {
           width: 100%;
           height: 36rem;
         }
@@ -713,13 +726,11 @@
           border-radius: 20px;
           align-items: center;
           justify-content: center;
-          
 
           &-circle {
             border-radius: 50%;
             padding: 1rem;
             background: white;
-            
 
             &:hover {
               transition: all 0.3s ease-out;
@@ -730,7 +741,7 @@
       }
     }
   }
-  
+
   @media screen and (max-width: 500px) {
     &-movies-cards {
       padding: 1rem;
@@ -746,3 +757,62 @@
   }
 }
 
+// footer
+
+.footer {
+  background: $primary-color;
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding: 2rem;
+  margin-top: 10rem;
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+    & > * {
+      margin-left: 1rem;
+      color: $text-color;
+      &:hover {
+        transition: all 0.7s ease-in-out;
+        color: white;
+      }
+    }
+  }
+
+  &-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    & > * {
+      margin-bottom: 1rem;
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-item {
+        padding: 0.5rem;
+        background-color: $text-color;
+        border-radius: 100%;
+        margin-left: 1rem;
+        color: $primary-color;
+      }
+    }
+
+    &-address {
+      text-align: center;
+    }
+  }
+  &-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
