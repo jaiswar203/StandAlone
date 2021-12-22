@@ -3,7 +3,7 @@ import Aos from "aos"
 
 const Footer = () => {
     return (
-        <footer className='footer' data-aos="zoom-in-up">
+        <footer className='footer' >
             <div className="footer-link">
                 <Link href="/" passHref>Home</Link>
                 <Link href="/about" passHref>About</Link>

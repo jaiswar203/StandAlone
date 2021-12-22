@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Head from 'next/head'
-import { useSelector } from 'react-redux'
 import { Navbar, Footer } from '.'
 
 const Layout = ({ title, children, description }) => {
-    const {home}=useSelector((state)=>state)
+    
     return (
         <div>
             <Head>

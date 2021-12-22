@@ -38,7 +38,7 @@ const About = () => {
                                         comp1 && (
                                             <>
                                                 {isVis && (
-                                                    <Typist cursor={{ show: false }} avgTypingDelay={90}>
+                                                    <Typist cursor={{ show: false }} avgTypingDelay={1000}>
                                                         <h3 className='section-detail-heading'>Mission</h3>
                                                         <p>To support Independent movie makers across globe to showcase their talent..</p>
                                                     </Typist>
