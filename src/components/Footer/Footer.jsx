@@ -1,8 +1,9 @@
 import Link from "next/link"
+import Aos from "aos"
 
 const Footer = () => {
     return (
-        <footer className='footer'>
+        <footer className='footer' data-aos="zoom-in-up">
             <div className="footer-link">
                 <Link href="/" passHref>Home</Link>
                 <Link href="/about" passHref>About</Link>
@@ -13,21 +14,31 @@ const Footer = () => {
             </div>
             <div className="footer-detail">
                 <div className="footer-detail-icon">
-                    <div className="footer-detail-icon-item">
-                        <i className="fab fa-facebook-f"></i>
-                    </div>
-                    <div className="footer-detail-icon-item">
-                        <i className="fab fa-instagram"></i>
-                    </div>
-                    <div className="footer-detail-icon-item">
-                        <i className="fab fa-linkedin-in"></i>
-                    </div>
-                    <div className="footer-detail-icon-item">
-                        <i className="fab fa-twitter"></i>
-                    </div>
-                    <div className="footer-detail-icon-item">
-                        <i className="fab fa-youtube"></i>
-                    </div>
+                    <a href="#">
+                        <div className="footer-detail-icon-item">
+                            <i className="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div className="footer-detail-icon-item">
+                            <i className="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div className="footer-detail-icon-item">
+                            <i className="fab fa-linkedin-in"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div className="footer-detail-icon-item">
+                            <i className="fab fa-twitter"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div className="footer-detail-icon-item">
+                            <i className="fab fa-youtube"></i>
+                        </div>
+                    </a>
                 </div>
 
                 <div className="footer-detail-title">
@@ -37,7 +48,7 @@ const Footer = () => {
                     <p>710 EAST COMMERCIAL STREET, LOS ANGELES, CA 90012 | 10A, GURUNAGAR SOCIETY, J P ROAD, FOUR BUNGALOW, ANDHERI (W) MUMBAI</p>
                 </div>
                 <div className="footer-detail-number">
-                    <a href="tel:">+918838838384</a> || <a href="tel:">+918838838384</a> 
+                    <a href="tel:">+918838838384</a> || <a href="tel:">+918838838384</a>
                 </div>
             </div>
             <div className="footer-copyright">

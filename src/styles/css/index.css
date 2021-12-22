@@ -82,8 +82,8 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#00c6ff));
-  background: linear-gradient(transparent, #00c6ff);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff));
+  background: linear-gradient(transparent, #fff);
 }
 
 /*********************Navbar **********************/
@@ -1123,6 +1123,10 @@ a {
           align-items: center;
 }
 
+.footer-detail-icon a {
+  color: #F79824;
+}
+
 .footer-detail-icon-item {
   padding: 0.5rem;
   background-color: #31393c;
@@ -1161,6 +1165,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 1.2rem;
   }
   .footer-link > * {
     margin-bottom: 0.3rem;
