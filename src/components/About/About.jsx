@@ -51,7 +51,7 @@ const About = () => {
                 </div>
                 <div className="about-intro-image">
                     <div className="about-intro-image-outer">
-                        <Image src="https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828148/samples/people/kitchen-bar.jpg" height={500} width={500} className=" animate__animated animate__backInUp" />
+                        <Image src="https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png" height={500} width={500} className=" animate__animated animate__backInUp" />
                     </div>
                 </div>
             </div>
