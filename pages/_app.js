@@ -13,7 +13,7 @@ import { Provider } from "react-redux";
 const store = createStore(reducer, compose(applyMiddleware(thunk)));
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setloading] = useState(false);
+  const [loading, setloading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
