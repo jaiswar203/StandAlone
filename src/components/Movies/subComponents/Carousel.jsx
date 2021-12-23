@@ -42,8 +42,8 @@ const Carousel = ({ data, heading,speed }) => {
             <div className="movies-carousel-content" data-aos="zoom-in-up">
                 <Swiper slidesPerView={1} spaceBetween={10} autoplay speed={ speed ? speed : 600} breakpoints={breakpoints} >
                     {
-                        data.map((d) => (
-                            <SwiperSlide className='movies-carousel-content-item'>
+                        data.map((d,i) => (
+                            <SwiperSlide className='movies-carousel-content-item' key={i}>
                                 <Image src={d.link} width={200} height={300} />
                                 <div className="detail">
                                     <h3>{d.name}</h3>
