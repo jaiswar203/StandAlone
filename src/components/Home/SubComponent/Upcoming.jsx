@@ -15,7 +15,7 @@ const Upcoming = () => {
                 <div className="pad-3">
                     <div className="home-upcoming-content">
                         <div className="home-upcoming-content-image">
-                            <Swiper autoplay={{delay:2000}} loop={true}>
+                            <Swiper autoplay={{delay:2000}} loop={true} speed={600}>
                                 <SwiperSlide>
                                     <img src="https://www.eventfaqs.com/uploads/News/Content/iaa-title3.jpg" alt="" />
                                 </SwiperSlide>

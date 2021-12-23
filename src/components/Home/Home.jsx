@@ -7,21 +7,21 @@ const Home = () => {
   const vid = useRef()
   const [volume, setVolume] = useState(false)
 
-  const callbackFuntion = (entries) => {
-    entries.forEach((en) => {
-      if (!en.isIntersecting) {
-        vid.current.pause();
-      } else {
-        vid.current.play();
-      }
-    });
-  };
   const options = {
     root: null,
     rootMargin: "0px",
     threshold: 1.0,
   };
   useEffect(() => {
+    const callbackFuntion = (entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) {
+          vid.current.pause();
+        } else {
+          vid.current.play();
+        }
+      });
+    };
     if (vid !== undefined) {
       if (volume) {
         vid.current.muted = false;
@@ -68,6 +68,9 @@ const Home = () => {
       </div>
       <div className="home-testimonial">
         <Testimonial />
+      </div>
+      <div className="home-submit">
+
       </div>
     </div>
 

@@ -41,6 +41,7 @@ const Movies = () => {
                             "slideShadows": false
                         }} pagination={false} className="mySwiper" loop={true} autoplay={{delay: 2000}}
                             onActiveIndexChange={(en) => console.log(en.activeIndex, 'slide Changed')}
+                            speed={600}
                         >
                             <SwiperSlide className='home-movies-cards-center-items' >
                                 <img src="https://dancemaster.in/demo/wp-content/uploads/2021/11/latest-realse-1-768x768.jpg" />

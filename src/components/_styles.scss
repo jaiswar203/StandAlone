@@ -796,7 +796,7 @@
       justify-content: center;
       align-items: center;
 
-      a{
+      a {
         color: $primary-color;
       }
 
@@ -812,8 +812,8 @@
     &-address {
       text-align: center;
     }
-    &-number{
-      a{
+    &-number {
+      a {
         color: $text-color;
       }
     }
@@ -826,34 +826,32 @@
   }
 
   @media screen and (max-width: 720px) {
-    &{
+    & {
       font-size: 0.8rem;
     }
-    &-link{
+    &-link {
       flex-direction: column;
       font-size: 1.2rem;
-      &> *{
+      & > * {
         margin-bottom: 0.3rem;
       }
     }
-    &-copyright{
+    &-copyright {
       flex-direction: column;
       text-align: center;
 
-      &>*{
+      & > * {
         margin-top: 1rem;
       }
     }
   }
 }
 
-
-
 // About
 
-.about{
+.about {
   padding: 5rem 3rem;
-  &-title{
+  &-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -861,7 +859,7 @@
     margin-bottom: 2rem;
     font-size: 1rem;
   }
-  &-intro{
+  &-intro {
     background: $primary-color;
     padding: 4rem;
     border-radius: 20px;
@@ -869,66 +867,65 @@
     justify-content: space-between;
     align-items: center;
 
-    &-detail{
+    &-detail {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-right: 2rem;
       width: 100%;
-      & > *{
+      & > * {
         margin-bottom: 2rem;
       }
 
-      p{
+      p {
         color: $text-color;
-        margin-top: 1rem; 
+        margin-top: 1rem;
       }
-      &-content{
+      &-content {
         word-break: break-word;
       }
     }
 
-    &-image{
+    &-image {
       float: right;
-      
-      &-outer{
-        background-color:  $text-color;
+
+      &-outer {
+        background-color: $text-color;
         padding: 0.8rem;
         border-radius: 50%;
-        img{
+        img {
           width: 100%;
           border-radius: 50%;
         }
       }
     }
   }
-  &-detail{
+  &-detail {
     display: flex;
     margin-top: 8rem;
     justify-content: space-between;
     align-items: center;
-    
-    p{
+
+    p {
       color: $text-color;
     }
-    &-vision{
-      
+    &-vision {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       padding: 2rem;
-      
+
       border-radius: 20px;
       background-color: $primary-color;
       margin-bottom: 15rem;
 
-      & > *{
+      & > * {
         margin-bottom: 1.5rem;
       }
     }
-    &-mission{
+    &-mission {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -938,22 +935,21 @@
       background-color: $primary-color;
       margin-left: 20%;
       margin-top: 10rem;
-  
-      & > *{
+
+      & > * {
         margin-bottom: 1.5rem;
       }
-
     }
 
-    @media screen and (max-width:650px) {
-      &{
+    @media screen and (max-width: 650px) {
+      & {
         flex-direction: column;
 
-        &-vision{
+        &-vision {
           margin-right: 10%;
           margin-bottom: 5rem;
         }
-        &-mission{
+        &-mission {
           margin-left: 10%;
           margin-top: 0;
         }
@@ -961,53 +957,120 @@
     }
   }
   @media screen and (max-width: 950px) {
-    &{
+    & {
       padding: 3rem 1rem;
-      &-intro{
+      &-intro {
         padding: 2rem;
         flex-direction: column-reverse;
-        &> *{
+        & > * {
           margin-bottom: 3rem;
         }
         @media screen and (min-width: 720px) {
-          &-image{
-            width: 50%; 
+          &-image {
+            width: 50%;
           }
         }
-        
       }
     }
   }
 
-  &-team{
+  &-team {
     margin-top: 3rem;
-    &-title{
+    &-title {
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
-      
     }
-    &-content{
+    &-content {
       margin-top: 3rem;
       background: $primary-color;
       border-radius: 20px;
       padding: 2.5rem;
 
-      img{
+      img {
         border-radius: 20px;
       }
-      .detail{
+      .detail {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 0.6rem;
         flex-direction: column;
 
-        P{
+        P {
           color: $text-color;
         }
       }
     }
   }
+}
+
+/********************Movies **********************/
+
+.movies {
+  padding: 3rem;
+  hr{
+    margin: 2rem 1rem;
+    color: $primary-color;
+  }
+  &-carousel {
+    &1,&2{
+      margin-top: 2rem;
+    }
+    &-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    &-content {
+      border-radius: 20px;
+      margin-top: 2rem;
+      padding: 2rem 1rem;
+      background: $primary-color;
+      
+
+      &-item {
+        img {
+          border-radius: 10px;
+        }
+        .detail {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          margin-top: 1rem;
+
+          .rating {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: $text-color;
+            margin-top: .2rem;
+
+            i{
+              // margin-top: 2px;
+            }
+            p{
+              font-weight: 600;
+            }
+            & > * {
+              margin-right: 0.3rem;
+            }
+          }
+
+          @media screen and (max-width:500px) {
+            font-size: 0.87rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+hr{
+  color: rebeccapurple;
 }

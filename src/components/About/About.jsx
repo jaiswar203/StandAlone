@@ -79,7 +79,7 @@ const About = () => {
                     <h1>Our Team</h1>
                 </div>
                 <div className="about-team-content" data-aos="zoom-in-up">
-                    <Swiper loop={true} slidesPerView={1} spaceBetween={50} breakpoints={breakpoints} autoplay>
+                    <Swiper loop={true} slidesPerView={1} spaceBetween={50} breakpoints={breakpoints} autoplay speed={600}>
                         <SwiperSlide>
                             <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828164/samples/bike.jpg"} width={560} height={320} />
                             <div className="detail">

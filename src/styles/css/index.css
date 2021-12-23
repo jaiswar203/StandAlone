@@ -1415,4 +1415,91 @@ a {
 .about-team-content .detail P {
   color: #31393c;
 }
+
+/********************Movies **********************/
+.movies {
+  padding: 3rem;
+}
+
+.movies hr {
+  margin: 2rem 1rem;
+  color: #F79824;
+}
+
+.movies-carousel1, .movies-carousel2 {
+  margin-top: 2rem;
+}
+
+.movies-carousel-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.movies-carousel-content {
+  border-radius: 20px;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  background: #F79824;
+}
+
+.movies-carousel-content-item img {
+  border-radius: 10px;
+}
+
+.movies-carousel-content-item .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+.movies-carousel-content-item .detail .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #31393c;
+  margin-top: .2rem;
+}
+
+.movies-carousel-content-item .detail .rating p {
+  font-weight: 600;
+}
+
+.movies-carousel-content-item .detail .rating > * {
+  margin-right: 0.3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .movies-carousel-content-item .detail {
+    font-size: 0.87rem;
+  }
+}
+
+hr {
+  color: rebeccapurple;
+}
 /*# sourceMappingURL=index.css.map */

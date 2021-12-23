@@ -39,7 +39,7 @@ const Testimonial = () => {
             <Visible run={false} >
                 <div className="pad-3 scale-up-center" >
                     <div className="home-testimonial-content">
-                        <Swiper loop={true} slidesPerView={1} spaceBetween={50} breakpoints={breakpoints} autoplay>
+                        <Swiper loop={true} slidesPerView={1} spaceBetween={50} breakpoints={breakpoints} autoplay speed={600}>
                             <SwiperSlide className='home-testimonial-content-item' onClick={onClickHandler}>
                                 <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828164/samples/bike.jpg"} width={560} height={320} />
                                 <div className="play-button" >
