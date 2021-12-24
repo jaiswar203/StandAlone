@@ -13,11 +13,16 @@ import { Provider } from "react-redux";
 const store = createStore(reducer, compose(applyMiddleware(thunk)));
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setloading] = useState(true);
+  const [loading, setloading] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
     }, [4000]);
+    // Remove the server-side injected CSS.
+    const jssStyles = document.querySelector("#jss-server-side");
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles);
+    }
   }, [loading]);
   return (
     <>
