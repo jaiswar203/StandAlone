@@ -30,12 +30,6 @@ const Navbar = () => {
                         <Link passHref href="/awards" >Award</Link>
                     </li>
                     <li>
-                        <Link passHref href="/services" >Services</Link>
-                    </li>
-                    <li>
-                        <Link passHref href="/promotion" >Promotion</Link>
-                    </li>
-                    <li>
                         <Link passHref href="/upcoming" >Events</Link>
                     </li>
                     <li>
