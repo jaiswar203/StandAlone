@@ -5,6 +5,9 @@ import Grid from "./Grid"
 
 import Modal from "./Modal";
 
+import Aos from "aos"
+import Filter from "./Filter";
+
 
 const Gallery = () => {
     const [blur, setBlur] = useState(false)
@@ -16,16 +19,21 @@ const Gallery = () => {
         } else {
             gallery.classList.remove('blur')
         }
-    }, [blur,img])
-    console.log(blur)
+        Aos.init()
+    }, [blur, img])
+    
     return (
         <>
-            <div className="gallery">
+            <div className="gallery" data-aos="zoom-in-up">
                 <div className={`gallery-content ${blur ? "blur" : ""}`}>
                     <Grid data={data.gallery} setBlur={setBlur} setImg={setImg} />
                 </div>
+                <div className="gallery-filter">
+                    <Filter />
+                </div>
             </div>
             <Modal img={img} setBlur={setBlur} setImg={setImg} />
+
         </>
     )
 }

@@ -1,11 +1,9 @@
 import Image from "next/image"
-import Aos from "aos"
+
 import { useEffect } from "react"
 
 const Modal = ({ img, setBlur, setImg }) => {
-    useEffect(()=>{
-        Aos.init()
-    },[])
+    
     if (img === null) {
         return null
     }

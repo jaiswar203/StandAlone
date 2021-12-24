@@ -52,27 +52,33 @@ const data={
     gallery:[
         {
             link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345672/photo-1603174559310-7bdc5016726b_fpyslb.jpg",
-            name: "Gallery"
+            name: "Gallery",
+            category: ["Lazarus","All"]
         },
         {
             link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345649/photo-1597211698746-e54a649c09e5_wphakl.jpg",
-            name: "Gallery"
+            name: "Gallery",
+            category: ["News"]
         },
         {
             link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345649/photo-1597211698746-e54a649c09e5_wphakl.jpg",
-            name: "Gallery"
+            name: "Gallery",
+            category: ["Lazarus","All"]
         },
         {
             link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345595/photo-1635542927898-5669a3fded62_pa2yaz.jpg",
-            name: "Gallery"
+            name: "Gallery",
+            category: ["DarkSeid"]
         },
         {
             link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345555/photo-1635542926841-44e50af9c90f_ytonho.jpg",
-            name: "Gallery"
+            name: "Gallery",
+            category: ["Lazarus","All"]
         },
         {
             link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345734/photo-1581851277292-439286e13d1e_psudzi.jpg",
-            name: "Gallery"
+            name: "Gallery",
+            category: ["DarkSeid"]
         },
         
     ]

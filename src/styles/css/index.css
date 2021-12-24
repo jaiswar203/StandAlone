@@ -1606,7 +1606,8 @@ a {
   top: 27%;
   border: 3px solid #F79824;
   z-index: 3;
-  width: 100%;
+  width: 90%;
+  left: 5%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -1614,11 +1615,68 @@ a {
 .gallery-modal .cancel-btn {
   position: absolute;
   padding: 0.5rem;
+  border: 2px solid white;
   color: white;
   border-radius: 50%;
   top: 2px;
   right: 2px;
   background-color: #F79824;
+}
+
+@media screen and (min-width: 1150px) {
+  .gallery-modal {
+    left: 13%;
+    top: 10%;
+    width: 70%;
+  }
+}
+
+.gallery-filter {
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.gallery-filter-nav {
+  text-align: center;
+  color: #F79824;
+}
+
+.gallery-filter-nav h4 {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0.3rem 2rem;
+}
+
+.gallery-filter-content {
+  margin: 2rem;
+  background: #F79824;
+  padding: 2rem;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.gallery-filter-content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 799px) {
+  .gallery-filter-content {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .gallery-filter-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /******************Contact us **********************/
