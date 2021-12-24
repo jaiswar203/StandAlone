@@ -3,12 +3,12 @@ import Aos from "aos"
 import { useEffect } from "react"
 
 const Modal = ({ img, setBlur, setImg }) => {
-    if (img === null) {
-        return null
-    }
     useEffect(()=>{
         Aos.init()
     },[])
+    if (img === null) {
+        return null
+    }
     return (
         <div className="gallery-modal" data-aos="zoom-in-up">
             <Image src={img} alt="" width={1920} height={1080} />
