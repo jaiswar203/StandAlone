@@ -51,37 +51,30 @@ const data={
     ],
     gallery:[
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828189/samples/people/bicycle.jpg",
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345672/photo-1603174559310-7bdc5016726b_fpyslb.jpg",
             name: "Gallery"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828172/samples/people/jazz.jpg",
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345649/photo-1597211698746-e54a649c09e5_wphakl.jpg",
             name: "Gallery"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828168/samples/people/boy-snow-hoodie.jpg",
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345649/photo-1597211698746-e54a649c09e5_wphakl.jpg",
             name: "Gallery"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828156/samples/people/smiling-man.jpg",
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345595/photo-1635542927898-5669a3fded62_pa2yaz.jpg",
             name: "Gallery"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828149/samples/animals/reindeer.jpg",
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345555/photo-1635542926841-44e50af9c90f_ytonho.jpg",
             name: "Gallery"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828177/samples/animals/three-dogs.jpg",
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640345734/photo-1581851277292-439286e13d1e_psudzi.jpg",
             name: "Gallery"
         },
-        {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828295/samples/animals/kitten-playing.gif",
-            name: "Gallery"
-        },
-        {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828146/samples/animals/cat.jpg",
-            name: "Gallery"
-        },
+        
     ]
 }
 

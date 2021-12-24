@@ -1500,6 +1500,107 @@ a {
 }
 
 /****************** Gallery ******************/
+.gallery-content {
+  padding: 2rem;
+}
+
+.gallery-content-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: white;
+}
+
+.gallery-content-img {
+  background-color: #000;
+  border-radius: 20px;
+  border: 5px solid #F79824;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 42rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .gallery-content-img {
+    height: 28rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .gallery-content-img {
+    padding: 1rem;
+    height: 23rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .gallery-content-img {
+    padding: 1rem;
+    height: 26rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .gallery-content-img {
+    padding: 1rem;
+    height: 22rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .gallery-content-img {
+    padding: 1rem;
+    height: 25rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .gallery-content-img {
+    padding: 1rem;
+    height: 28rem;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  .gallery-content-img {
+    padding: 1rem;
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .gallery-content-img {
+    height: 27rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .gallery-content-img {
+    height: 32rem;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .gallery-content-img {
+    height: 39rem;
+  }
+}
+
+.gallery-content-img img {
+  margin-top: 1rem;
+  width: 100%;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
 /******************Contact us **********************/
 .contact .contact-bg {
   height: 40vh;
