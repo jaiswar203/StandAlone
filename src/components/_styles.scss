@@ -1157,7 +1157,31 @@
           linear-gradient(transparent, rgba(0, 0, 0, 0.5));
       }
     }
+    
   }
+  
+  &-modal{
+    position: fixed;
+    top: 27%;
+    // left: 50%;
+    
+    border: 3px solid $primary-color;
+    z-index: 3;
+    width: 100%;
+    
+    transform: translate(-50%,-50%);
+
+    .cancel-btn{
+      position: absolute;
+      padding: 0.5rem;
+      color: white;
+      border-radius: 50%;
+      top: 2px;
+      right: 2px;
+      background-color: $primary-color;
+    }
+  }
+  
 }
 
 /******************Contact us **********************/
@@ -1361,4 +1385,9 @@
       border-radius: 20px;
     }
   }
+}
+
+.blur{
+  filter: blur(3px);
+  pointer-events: none;
 }

@@ -1,12 +1,23 @@
 import Image from "next/image"
+import Aos from "aos"
+import { useEffect } from "react"
 
-const Modal = ({img}) => {
-    if(img===null){
+const Modal = ({ img, setBlur, setImg }) => {
+    if (img === null) {
         return null
     }
+    useEffect(()=>{
+        Aos.init()
+    },[])
     return (
-        <div className="gallery-modal">
+        <div className="gallery-modal" data-aos="zoom-in-up">
             <Image src={img} alt="" width={1920} height={1080} />
+            <div className="cancel-btn" onClick={() => {
+                setBlur(false)
+                setImg(null)
+            }}>
+                <i className="fas fa-times"></i>
+            </div>
         </div>
     )
 }
