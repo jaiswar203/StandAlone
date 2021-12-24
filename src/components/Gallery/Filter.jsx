@@ -67,7 +67,7 @@ const Filter = () => {
             </div>
             <div className="gallery-filter-content">
                 {newData.map((d)=>(
-                    <Image src={d.link} width={300} height={300} />
+                    <Image src={d.link} alt={d.name} width={300} height={300}  key={d}/>
                 ))}
             </div>
         </>
