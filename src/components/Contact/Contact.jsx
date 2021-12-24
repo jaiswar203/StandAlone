@@ -1,4 +1,4 @@
-import {TextField} from '@material-ui/core'
+import Image from "next/image"
 
 const Contact = () => {
     return (
@@ -73,7 +73,7 @@ const Contact = () => {
         <input type="submit" className="send-btn" defaultValue="send message" />
       </form>
       <div>
-        <img src="https://res.cloudinary.com/dykwfe4cr/image/upload/v1640341733/contact-png_gohkpk.png" alt />
+        <Image src="https://res.cloudinary.com/dykwfe4cr/image/upload/v1640341733/contact-png_gohkpk.png" width={400} height={400} alt />
       </div>
     </div>
   </div>
