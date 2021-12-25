@@ -18,11 +18,6 @@ function MyApp({ Component, pageProps }) {
     setTimeout(() => {
       setloading(false);
     }, [4000]);
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector("#jss-server-side");
-    if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
-    }
   }, [loading]);
   return (
     <>
@@ -32,7 +27,7 @@ function MyApp({ Component, pageProps }) {
         </div>
       ) : (
         <Provider store={store}>
-          <Component {...pageProps} />
+          <Component {...pageProps} loading={loading} />
         </Provider>
       )}
     </>

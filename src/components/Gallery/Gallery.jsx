@@ -12,6 +12,7 @@ import Filter from "./Filter";
 const Gallery = () => {
     const [blur, setBlur] = useState(false)
     const [img, setImg] = useState(null)
+    const [focus, setFocus] = useState(false)
     useEffect(() => {
         const gallery = document.querySelector('footer')
         if (blur) {
@@ -20,19 +21,24 @@ const Gallery = () => {
             gallery.classList.remove('blur')
         }
         Aos.init()
-    }, [blur, img])
-    
+        if(img!==null){
+            setFocus(true)
+        }else{
+            setFocus(false)
+        }
+    }, [blur, img,focus])
+
     return (
         <>
             <div className="gallery" data-aos="zoom-in-up">
                 <div className={`gallery-content ${blur ? "blur" : ""}`}>
-                    <Grid data={data.gallery} setBlur={setBlur} setImg={setImg} />
+                    <Grid data={data.gallery} setBlur={setBlur} setImg={setImg} img={focus} />
                 </div>
-                <div className="gallery-filter">
-                    <Filter />
+                <div className={`gallery-filter ${blur ? "blur" : ""}`}>
+                    <Filter setImg={setImg} />
                 </div>
+                <Modal img={img} setBlur={setBlur} setImg={setImg} />
             </div>
-            <Modal img={img} setBlur={setBlur} setImg={setImg} />
 
         </>
     )

@@ -5,7 +5,7 @@ import SwiperCore, { Autoplay, EffectCoverflow } from 'swiper'
 
 
 SwiperCore.use([EffectCoverflow, Autoplay]);
-const Grid = ({ data,setBlur,setImg }) => {
+const Grid = ({ data,setBlur,setImg,img }) => {
     
     
     const breakpoints = {
@@ -22,10 +22,12 @@ const Grid = ({ data,setBlur,setImg }) => {
             slidesPerView: 4
         }
     }
-    const onClickHandler=(d)=>{
+    const onClickHandler=(d,i)=>{
         setImg(d.link)
         setBlur(true)
+        
     }
+    
     return (
         <>
             <div className="gallery-content-heading">
@@ -38,13 +40,13 @@ const Grid = ({ data,setBlur,setImg }) => {
                     "depth": 100,
                     "modifier": 1,
                     "slideShadows": true
-                }} pagination={false} className="mySwiper" loop={false} autoplay={{ delay: 2000 }}
+                }} pagination={false} className="mySwiper" loop={false} autoplay={ img ? false : {  delay: 3000 }}
                     // onActiveIndexChange={(en) => console.log(en.activeIndex, 'slide Changed')}
                     speed={600}
                 >
                     {
                         data.map((d, i) => (
-                            <SwiperSlide className='movies-carousel-content-item' key={i} onClick={()=>onClickHandler(d)}>
+                            <SwiperSlide className='movies-carousel-content-item' key={i} onClick={()=>onClickHandler(d,i)}>
                                 <img src={d.link} width={200} />
                             </SwiperSlide>
                         ))

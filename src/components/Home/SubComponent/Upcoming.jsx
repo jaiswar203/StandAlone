@@ -1,6 +1,7 @@
 import { HeadingAOS, Visible } from '../hooks'
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore,{ Autoplay} from 'swiper'
+import SwiperCore, { Autoplay } from 'swiper'
+import Link from 'next/link';
 
 SwiperCore.use([Autoplay])
 
@@ -15,7 +16,7 @@ const Upcoming = () => {
                 <div className="pad-3">
                     <div className="home-upcoming-content">
                         <div className="home-upcoming-content-image">
-                            <Swiper autoplay={{delay:2000}} loop={true} speed={600}>
+                            <Swiper autoplay={{ delay: 2000 }} loop={true} speed={600}>
                                 <SwiperSlide>
                                     <img src="https://www.eventfaqs.com/uploads/News/Content/iaa-title3.jpg" alt="" />
                                 </SwiperSlide>
@@ -31,9 +32,11 @@ const Upcoming = () => {
                             <h2>Lazarus Pit</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio vel pariatur consectetur doloribus aperiam soluta provident odio porro quasi ab repudiandae nostrum accusamus sed fugiat unde dolore, saepe, omnis aliquam.</p>
                             <div className="reg-button">
-                                <button>
-                                    Register
-                                </button>
+                                <Link passHref href={"/register"}>
+                                    <button>
+                                        Register
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
