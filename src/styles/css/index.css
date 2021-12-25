@@ -1635,8 +1635,8 @@ a {
 }
 
 .gallery-modal .button i:hover {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
@@ -1983,5 +1983,169 @@ a {
   -webkit-filter: blur(3px);
           filter: blur(3px);
   pointer-events: none;
+}
+
+/***************************** Register ********************************/
+.register {
+  margin: 10rem;
+  background: #F79824;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid white;
+}
+
+.register-image {
+  width: 50%;
+}
+
+.register-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/********************** Evnts *************************************/
+.event-carousel {
+  width: 100%;
+  background-color: black;
+  height: 30vh;
+}
+
+.event-carousel .swiper-pagination-bullet {
+  background: whitesmoke;
+  opacity: 0.4;
+}
+
+.event-carousel .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white;
+  background-color: #F79824;
+}
+
+.event-carousel img {
+  width: 100%;
+}
+
+.awards-carousel {
+  margin-top: 2rem;
+  width: 100%;
+  border-bottom: 2px solid #F79824;
+  border-top: 2px solid #F79824;
+}
+
+.awards-carousel .swiper-pagination-bullet {
+  background: whitesmoke;
+  opacity: 0.4;
+}
+
+.awards-carousel .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white;
+  background-color: #F79824;
+}
+
+.awards-carousel .swiper-button-next,
+.awards-carousel .swiper-button-prev {
+  color: #F79824;
+}
+
+.awards-carousel .swiper-button-next:hover,
+.awards-carousel .swiper-button-prev:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.awards-carousel img {
+  width: 100%;
+}
+
+.awards-dates {
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.awards-dates-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.awards-dates-heading h1 {
+  border-bottom: 2px solid #F79824;
+}
+
+.awards-dates-content {
+  margin-top: 2rem;
+}
+
+.awards-dates-content > * {
+  margin-bottom: 2rem;
+}
+
+.awards-dates-content-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  padding: 0 1rem;
+}
+
+.awards-dates-content-heading i {
+  font-size: 1.8rem;
+}
+
+.awards-dates-content-carousel {
+  background: #F79824;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.awards-dates-content-carousel .item {
+  border-radius: 20px;
+}
+
+.awards-dates-content-carousel .item img {
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .awards-dates {
+    padding: 1rem;
+  }
+  .awards-dates-content {
+    font-size: .7rem;
+  }
+  .awards-dates-content i {
+    font-size: 1.3rem;
+  }
+  .awards-dates-content-carousel {
+    padding: 1rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -1082,7 +1082,7 @@
       align-self: center;
       color: white;
 
-      h1{
+      h1 {
         border-bottom: 2px solid $primary-color;
       }
     }
@@ -1186,8 +1186,8 @@
         font-size: 4rem;
         color: $primary-color;
 
-        &:hover{
-          transition: all .2s ease-in-out;
+        &:hover {
+          transition: all 0.2s ease-in-out;
           transform: scale(1.3);
         }
       }
@@ -1474,4 +1474,146 @@
 .blur {
   filter: blur(3px);
   pointer-events: none;
+}
+
+/***************************** Register ********************************/
+
+.register {
+  margin: 10rem;
+  background: $primary-color;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid white;
+
+  &-image {
+    width: 50%;
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}
+
+/********************** Evnts *************************************/
+
+.event {
+  &-carousel {
+    width: 100%;
+    background-color: black;
+    height: 30vh;
+
+    .swiper-pagination-bullet {
+      background: whitesmoke;
+      opacity: 0.4;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: white;
+      background-color: $primary-color;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.awards {
+  // padding-top: 1rem;
+  &-carousel {
+    margin-top: 2rem;
+    width: 100%;
+    // height: 10rem;
+    border-bottom: 2px solid $primary-color;
+    border-top: 2px solid $primary-color;
+    .swiper-pagination-bullet {
+      background: whitesmoke;
+      opacity: 0.4;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: white;
+      background-color: $primary-color;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: $primary-color;
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &-dates {
+    padding: 3rem;
+    margin-top: 2rem;
+
+    &-heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      h1 {
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+
+    &-content {
+      margin-top: 2rem;
+      & > *{
+        margin-bottom: 2rem;
+      }
+      &-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: whitesmoke;
+        padding: 0 1rem;
+        i {
+          font-size: 1.8rem;
+        }
+      }
+      &-carousel {
+        background: $primary-color;
+        padding: 2rem;
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 2rem;
+        .item {
+          border-radius: 20px;
+          img {
+            border-radius: 20px;
+            width: 100%;
+            cursor: pointer;
+            // &:hover {
+            //   transition: all 0.4s ease-in-out;
+            //   transform: scale(1.3) rotate(10deg);
+            // }
+          }
+        }
+      }
+
+    }
+    @media screen and (max-width: 700px) {
+      &{
+        padding: 1rem;
+        &-content{
+
+          font-size: .7rem;
+          
+        i{
+          font-size: 1.3rem;
+        }
+        &-carousel{
+          padding: 1rem;
+        }
+      }
+      }
+    }
+  }
 }
