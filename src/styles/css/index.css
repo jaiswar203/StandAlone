@@ -1493,9 +1493,10 @@ a {
   margin-right: 0.3rem;
 }
 
-@media screen and (max-width: 500px) {
-  .movies-carousel-content-item .detail {
-    font-size: 0.87rem;
+@media screen and (max-width: 700px) {
+  .movies {
+    padding: 1rem;
+    font-size: 0.8rem;
   }
 }
 

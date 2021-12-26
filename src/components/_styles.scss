@@ -1061,11 +1061,19 @@
             }
           }
 
-          @media screen and (max-width: 500px) {
-            font-size: 0.87rem;
-          }
+          // @media screen and (max-width: 500px) {
+
+          //   font-size: 0.87rem;
+          // }
         }
       }
+    }
+  }
+
+  @media screen and (max-width:700px) {
+    &{
+      padding: 1rem;
+      font-size: 0.8rem;
     }
   }
 }
