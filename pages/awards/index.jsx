@@ -1,4 +1,4 @@
-import { Layout,Awards } from "../src/components"
+import { Layout,Awards } from "../../src/components"
 
 const awards = () => {
     return (

@@ -31,11 +31,14 @@ const Awards = () => {
             </div>
             <div className="awards-dates">
                 <div className="awards-dates-heading">
+                <i className="fas fa-award"></i>
                     <h1>Awards</h1>
+                <i className="fas fa-award"></i>
                 </div>
                 <div className="awards-dates-content">
                     <Years year={2021} link={"2021"} data={data.datas} speed={600}/>
                     <Years year={2020} link={"2020"} data={data.datas} speed={800} />
+                    <Years year={2019} link={"2019"} data={data.datas} speed={1000} />
                 </div>
             </div>
         </div>
