@@ -92,19 +92,19 @@ const data={
     ],
     person:[
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"
         },
         {
-            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"
+            link: "https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"
         },
     ]
 }

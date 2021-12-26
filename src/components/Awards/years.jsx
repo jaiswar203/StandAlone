@@ -3,21 +3,21 @@ import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react"
 
 
-const Years = ({ year, link, data,speed }) => {
-    const breakpoints={
-        "350":{
+const Years = ({ year, link, data, speed }) => {
+    const breakpoints = {
+        "350": {
             slidesPerView: 2
         },
-        "700":{
+        "700": {
             slidesPerView: 3
         },
-        "900":{
+        "900": {
             slidesPerView: 4
         },
-        "1250":{
+        "1250": {
             slidesPerView: 5
         },
-        "1400":{
+        "1400": {
             slidesPerView: 6
         },
     }
@@ -30,9 +30,9 @@ const Years = ({ year, link, data,speed }) => {
                 </Link>
             </div>
             <div className="awards-dates-content-carousel" data-aos="zoom-in-up">
-                <Swiper slidesPerView={1} loop={true} spaceBetween={10} autoplay={{delay: 3000}} speed={speed ? speed : 600} breakpoints={breakpoints}>
+                <Swiper slidesPerView={1} loop={true} spaceBetween={10} autoplay={{ delay: 3000 }} speed={speed ? speed : 600} breakpoints={breakpoints}>
                     {data.map((d) => (
-                        <SwiperSlide className='item' key={d.name}> 
+                        <SwiperSlide className='item' key={d.name}>
                             <Image src={d.link} alt={d.name} width={300} height={450} />
                         </SwiperSlide>
                     ))

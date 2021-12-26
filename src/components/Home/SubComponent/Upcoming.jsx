@@ -32,9 +32,9 @@ const Upcoming = () => {
                             <h2>Lazarus Pit</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio vel pariatur consectetur doloribus aperiam soluta provident odio porro quasi ab repudiandae nostrum accusamus sed fugiat unde dolore, saepe, omnis aliquam.</p>
                             <div className="reg-button">
-                                <Link passHref href={"/register"}>
+                                <Link passHref href={"/upcoming"}>
                                     <button>
-                                        Register
+                                        Show More
                                     </button>
                                 </Link>
                             </div>

@@ -45,7 +45,7 @@ const About = () => {
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro labore doloremque fugit corrupti? Nulla illum eius odit? Maxime accusantium reiciendis tempora voluptatibus, molestiae, et excepturi ipsa quibusdam officiis fugiat architecto?
                             Quisquam, nesciunt incidunt mollitia expedita accusamus quos voluptatem distinctio ducimus accusantium a laudantium explicabo dolore consectetur, voluptatibus ratione, quasi similique libero amet nobis quaerat. Eveniet quibusdam vel soluta nisi ex?
                             Debitis tempore rerum neque, aspernatur necessitatibus aliquam dicta accusantium tenetur quasi eaque deserunt labore optio? Voluptatum nemo repellendus commodi reiciendis libero adipisci neque. Sapiente hic incidunt, numquam ipsa voluptatibus dolores!</p>
-                        
+
 
                     </div>
                 </div>
@@ -75,33 +75,11 @@ const About = () => {
             </div>
 
             <div className="about-team">
-                <div className="about-team-title"  data-aos="zoom-in-up">
+                <div className="about-team-title" data-aos="zoom-in-up">
                     <h1>Our Team</h1>
                 </div>
                 <div className="about-team-content" data-aos="zoom-in-up">
-                    <Swiper loop={true} slidesPerView={1} spaceBetween={50} breakpoints={breakpoints} autoplay speed={600}>
-                        <SwiperSlide>
-                            <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828164/samples/bike.jpg"} width={560} height={320} objectFit="cover" />
-                            <div className="detail">
-                                <h4>Jhon Doe</h4>
-                                <p>Web Developer</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828164/samples/bike.jpg"} width={560} height={320} objectFit="cover" />
-                            <div className="detail">
-                                <h4>Jhon Doe</h4>
-                                <p>Web Developer</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1628828164/samples/bike.jpg"} width={560} height={320} objectFit="cover" />
-                            <div className="detail">
-                                <h4>Jhon Doe</h4>
-                                <p>Web Developer</p>
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
+                    
                 </div>
             </div>
         </div>
