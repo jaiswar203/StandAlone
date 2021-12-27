@@ -21,11 +21,15 @@ const Home = () => {
         vid.current.muted = true;
       }
 
-      if (document.hidden) {
-        vid.current.pause();
-      } else {
-        vid.current.play();
-      }
+      document.addEventListener("visibilitychange", function () {
+        const state = document.visibilityState;
+
+        if (state === "hidden") {
+          vid.current.pause()
+        } else {
+          vid.current.play()
+        }
+      })
     }
   }, [volume]);
   const ChangeHandler = (visible) => {
