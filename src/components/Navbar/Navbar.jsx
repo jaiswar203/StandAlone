@@ -5,9 +5,11 @@ import Logo from '../../images/logo.png'
 const Navbar = () => {
     return (
         <header className="header">
-            <a href="www.google.com" className="logo" >
+            <Link href={"/"} passHref>
+                <a className="logo">
                 <Image src={Logo} />
-            </a>
+                </a>
+            </Link>
             <input
                 className="menu-icon"
                 type="checkbox"
