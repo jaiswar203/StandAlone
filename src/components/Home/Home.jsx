@@ -1,18 +1,15 @@
 
 import { useRef, useEffect, useState } from 'react'
 import ReactVisibilitySensor from 'react-visibility-sensor'
+import { useRouter } from 'next/router'
 
 import { Movies, MidVid, Testimonial, Upcoming, About } from './SubComponent'
 
 const Home = () => {
   const vid = useRef()
   const [volume, setVolume] = useState(false)
+  const router=useRouter()
 
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 1.0,
-  };
   useEffect(() => {
     if (vid !== undefined) {
       if (volume) {
@@ -23,9 +20,7 @@ const Home = () => {
 
       document.addEventListener("visibilitychange", function () {
         const state = document.visibilityState;
-
         if (!vid.current.paused) {
-
           if (state === "hidden") {
             vid.current.pause()
           } else {
@@ -42,6 +37,7 @@ const Home = () => {
       vid.current.play()
     }
   }
+  // console.log(router.pathname.toString())
   return (
     <div className="home">
       <ReactVisibilitySensor onChange={ChangeHandler}>
