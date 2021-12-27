@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Card = ({ img }) => {
     return (
-        <div className="card">
+        <div className="card" data-aos="zoom-in">
             <div className="card__content">
                 <div className="card__front" style={{backgroundImage:`url(${img})`}}>
                     <h3 className="card__title">Jhon Doe</h3>

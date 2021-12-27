@@ -18,7 +18,7 @@ const Visible = ({ children, setIsVis, run = true, aos = true }) => {
     <>
       <ReactVisibilitySensor onChange={onChan}>
         {aos ? (
-          <div data-aos="zoom-in-up" data-aos-duration="2000">
+          <div data-aos="zoom-in" data-aos-duration="2000">
             {children}
           </div>
         ) : (

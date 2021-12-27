@@ -39,7 +39,7 @@ const Carousel = ({ data, heading,speed }) => {
                     <h4>See More</h4>
                 </Link>
             </div>
-            <div className="movies-carousel-content" data-aos="zoom-in-up">
+            <div className="movies-carousel-content" data-aos="zoom-in">
                 <Swiper slidesPerView={1} spaceBetween={10} autoplay speed={ speed ? speed : 600} breakpoints={breakpoints} >
                     {
                         data.map((d,i) => (

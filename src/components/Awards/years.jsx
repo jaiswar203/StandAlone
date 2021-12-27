@@ -23,13 +23,13 @@ const Years = ({ year, link, data, speed }) => {
     }
     return (
         <>
-            <div className="awards-dates-content-heading" data-aos="zoom-in-up">
+            <div className="awards-dates-content-heading" data-aos="zoom-in">
                 <h1>{year}</h1>
                 <Link passHref href={`/awards/${link}`}>
                     <i className="fas fa-arrow-right" />
                 </Link>
             </div>
-            <div className="awards-dates-content-carousel" data-aos="zoom-in-up">
+            <div className="awards-dates-content-carousel" data-aos="zoom-in">
                 <Swiper slidesPerView={1} loop={true} spaceBetween={10} autoplay={{ delay: 3000 }} speed={speed ? speed : 600} breakpoints={breakpoints}>
                     {data.map((d) => (
                         <SwiperSlide className='item' key={d.name}>

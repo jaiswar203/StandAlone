@@ -29,7 +29,7 @@ const Detail = ({ data,speed,title }) => {
             <div className="awards-detail-heading" >
                 <h1>{title}</h1>
             </div>
-            <div className="awards-detail-carousel" data-aos="zoom-in-up">
+            <div className="awards-detail-carousel" data-aos="zoom-in">
                 <Swiper slidesPerView={1} loop={true} spaceBetween={10} autoplay={{ delay: 3000 }} speed={speed ? speed : 600} breakpoints={breakpoints}>
                     {data.map((d) => (
                         <SwiperSlide className='item' key={d.name}>

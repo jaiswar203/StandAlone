@@ -5,7 +5,7 @@ import Image from "next/image"
 const Card = ({link,aos}) => {
     
     return (
-        <div className="item-container" data-aos={aos ? aos : "zoom-in-up"}>
+        <div className="item-container" data-aos={aos ? aos : "zoom-in"}>
             <div className="img-container">
                 <Image src={link} width={600} height={770} objectFit="contain" alt="Event image" />
             </div>

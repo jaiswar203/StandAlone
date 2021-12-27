@@ -19,7 +19,7 @@ body {
   --level-three: translateZ(9rem);
   --fw-normal: 400;
   --fw-bold: 700;
-  --clr: #c1b19d;
+  --clr: #5a544b;
 }
 
 .loader {
@@ -1480,6 +1480,7 @@ a {
       -ms-flex-order: 2;
           order: 2;
   text-transform: uppercase;
+  color: #F79824;
 }
 
 .about-team-content .card__subtitle {
@@ -1497,13 +1498,14 @@ a {
           transform: var(--level-two);
   font-weight: var(fw-normal);
   font-size: 1rem;
+  color: #F79824;
   line-height: 1.6;
 }
 
 .about-team-content .card__back {
   -webkit-transform: rotateY(0.5turn);
           transform: rotateY(0.5turn);
-  color: var(--clr);
+  color: #F79824;
   background: #333;
 }
 

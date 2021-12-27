@@ -30,7 +30,7 @@ const Gallery = () => {
 
     return (
         <>
-            <div className="gallery" data-aos="zoom-in-up">
+            <div className="gallery" data-aos="zoom-in">
                 <div className={`gallery-content ${blur ? "blur" : ""}`}>
                     <Grid data={data.gallery} setBlur={setBlur} setImg={setImg} img={focus} />
                 </div>

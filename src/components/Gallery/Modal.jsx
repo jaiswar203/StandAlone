@@ -8,7 +8,7 @@ const Modal = ({ img, setBlur, setImg }) => {
         return null
     }
     return (
-        <div className="gallery-modal" data-aos="zoom-in-up">
+        <div className="gallery-modal" data-aos="zoom-in">
             <Image src={img} alt="" width={1920} height={1080} />
             <div className="button">
                 <i className="fas fa-chevron-left"></i>

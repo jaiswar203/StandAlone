@@ -2,7 +2,7 @@ import Image from "next/image"
 import Aos from "aos"
 import { useEffect, useState } from "react"
 import Typist from "react-typist"
-import { SwiperSlide, Swiper } from 'swiper/react'
+
 import SwiperCore, { Autoplay } from 'swiper'
 import Card from "./Card"
 
@@ -21,21 +21,13 @@ const About = () => {
         Aos.init()
 
     }, [animate])
-    const breakpoints = {
-        "710": {
-            slidesPerView: 2
-        },
-        "1100": {
-            slidesPerView: 3
-        }
-    }
 
     return (
         <div className='about'>
             <div className="about-title">
                 <h1>About</h1>
             </div>
-            <div className="about-intro" data-aos="zoom-in-up">
+            <div className="about-intro" data-aos="zoom-in">
                 <div className="about-intro-detail">
                     <div className="about-intro-detail-title">
                         <Typist cursor={{ show: false }} avgTypingDelay={100}>
@@ -52,12 +44,12 @@ const About = () => {
                 </div>
                 <div className="about-intro-image">
                     <div className="about-intro-image-outer">
-                        <Image src="https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png" height={500} width={500} className=" animate__animated animate__backInUp" objectFit="cover" />
+                        <Image src="https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png" height={500} width={500} objectFit="cover" />
                     </div>
                 </div>
             </div>
             <div className="about-detail">
-                <div className="about-detail-vision" data-aos={`zoom-in-up`} >
+                <div className="about-detail-vision" data-aos={`zoom-in`} >
                     <div className="about-detail-vision-title">
                         <h2>Vision</h2>
                     </div>
@@ -76,10 +68,10 @@ const About = () => {
             </div>
 
             <div className="about-team">
-                <div className="about-team-title" data-aos="zoom-in-up">
+                <div className="about-team-title" data-aos="zoom-in">
                     <h1>Our Team</h1>
                 </div>
-                <div className="about-team-content" data-aos="zoom-in-up">
+                <div className="about-team-content" data-aos="zoom-in">
                     <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
                     <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
                     <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />

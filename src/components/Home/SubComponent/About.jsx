@@ -27,7 +27,7 @@ const About = () => {
                                 </p>
                                 <div className="section-detail-vision">
                                     {isVis && (
-                                        <Typist cursor={{ show: false }} onTypingDone={() => setComp1(true)} avgTypingDelay={90}>
+                                        <Typist cursor={{ show: false }} onTypingDone={() => setComp1(true)} avgTypingDelay={50}>
                                             <h3 className='section-detail-heading'>Vison</h3>
                                             <p>To make the dream come true of the independent movie...</p>
                                         </Typist>
@@ -38,7 +38,7 @@ const About = () => {
                                         comp1 && (
                                             <>
                                                 {isVis && (
-                                                    <Typist cursor={{ show: false }} avgTypingDelay={1000}>
+                                                    <Typist cursor={{ show: false }} avgTypingDelay={50}>
                                                         <h3 className='section-detail-heading'>Mission</h3>
                                                         <p>To support Independent movie makers across globe to showcase their talent..</p>
                                                     </Typist>

@@ -16,5 +16,3 @@ function MyComponent (props) {
     </VisibilitySensor>
   );
 }
-
-2. react-modal-video
