@@ -24,10 +24,13 @@ const Home = () => {
       document.addEventListener("visibilitychange", function () {
         const state = document.visibilityState;
 
-        if (state === "hidden") {
-          vid.current.pause()
-        } else {
-          vid.current.play()
+        if (!vid.current.paused) {
+
+          if (state === "hidden") {
+            vid.current.pause()
+          } else {
+            vid.current.play()
+          }
         }
       })
     }

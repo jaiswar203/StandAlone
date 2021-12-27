@@ -1624,7 +1624,7 @@ a {
 }
 
 .movies-carousel1, .movies-carousel2 {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .movies-carousel-heading {
@@ -1642,7 +1642,7 @@ a {
 
 .movies-carousel-content {
   border-radius: 20px;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 2rem 1rem;
   background: #F79824;
 }

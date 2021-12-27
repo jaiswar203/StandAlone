@@ -10,11 +10,11 @@ const Movies = () => {
             <div className="movies-carousel">
                 <Carousel data={data.datas} heading={"Top Rated"} />
             </div>
-            <hr />
+            
             <div className="movies-carousel1">
                 <Carousel data={data.datas} heading={"HollyWood"} speed={800} />
             </div>
-            <hr />
+            
             <div className="movies-carousel2">
                 <Carousel data={data.datas} heading={"BollyWood"} speed={1000} />
             </div>
