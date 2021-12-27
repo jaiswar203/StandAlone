@@ -17,6 +17,16 @@ body{
   
 }
 
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  
+  --fw-normal: 400;
+  --fw-bold: 700;
+  
+  --clr: #c1b19d;
+}
 
 .loader{
   height: 100vh;

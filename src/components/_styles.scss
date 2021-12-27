@@ -476,12 +476,18 @@
 
     &-video {
       border-radius: 20px;
-      padding: 3rem;
+      padding:3rem;
 
       display: flex;
       justify-content: center;
       align-content: center;
       flex-direction: column;
+
+      @media screen and (min-width: 1400px) {
+        &{
+          padding: 3rem 15rem;
+        }
+      }
       video {
         width: 100%;
 
@@ -988,100 +994,94 @@
       }
     }
     &-content {
-      background-color: $primary-color;
+      // background-color: $primary-color;
       padding: 2rem;
       display: grid;
       border-radius: 20px;
       grid-template-columns: repeat(3,1fr);
       .card {
-        position: relative;
-        height: 25rem;
-        width: 18.75rem;
-        background: $text-color;
-        border-radius: 20px;
-        box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5),
-          5px 5px 10px rgba(0, 0, 0, $alpha: 0.5);
-
-        .info {
-          position: relative;
-          height: 65%;
-          width: 100%;
-          // margin-top: 40%;
-          transform: translateY(100%);
-          opacity: 0;
-          p {
-            position: relative;
-            padding: 25px;
-            // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: #fff;
-          }
-          ul {
-            height: 6.25rem;
-            width: 100%;
-            list-style: none;
-            display: flex;
-            padding-left: 50px;
-            // margin-top: -15px;
-
-            li {
-              font-size: 1.2rem;
-              margin-left: 15px;
-              color: black;
-              text-shadow: -2px -2px 5px rgba(255, 255, 255, 0.05),
-                2px 2px 5px rgba($color: #000000, $alpha: 0.5);
-              transition: 0.3s;
-
-              i {
-                font-size: 2rem;
-              }
-
-              &:hover {
-                transform: translateY(-4px);
-                transition: 0.3s;
-                cursor: pointer;
-                color: $primary-color;
-              }
-            }
-          }
-        }
-
-        .layer {
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-
-        
-        
-          img {
-            margin-left: 3rem;
-            margin-top: 3rem;
-            border-radius: 50%;
-          }
-          h1 {
-            text-align: center;
-            color: white;
-            letter-spacing: 3px;
-            margin-top: 1rem;
-          }
-        }
-
-        &:hover .layer {
-          transform: scale(0.7);
-          transition: 0.3s;
-          margin-top: -35%;
-        }
-
-        &:hover .info {
-          transform: translateY(70%);
-          transition: 0.3s;
-          opacity: 1;
-        }
+        width: 21rem;
+        // border-radius: 20px;
       }
-      @media screen and (max-width:670px) {
+      
+      .card__content {
+        text-align: center;
+        position: relative;
+        padding: 15em 5em;
+        transition: transform 3s;
+        // background: pink;
+        transform-style: preserve-3d;
+      }
+      
+      .card:hover .card__content {
+        transform: rotateY(.5turn);
+      }
+      
+      .card__front,
+      .card__back {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 5em 3em;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        display: grid;
+        align-content: center;
+      }
+      
+      .card__front {
+        background-color: var(--clr);
+        // background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/fair.jpg);
+        background-size: cover;
+        background-blend-mode: overlay;
+        color: #333;
+      }
+      
+      .card__front::before {
+        content: '';
+        position: absolute;
+        --spacer: 1em;
+        top: var(--spacer);
+        bottom: var(--spacer);
+        left: var(--spacer);
+        right: var(--spacer);
+        border: 3px solid currentColor;
+        transform: var(--level-one);
+      }
+      
+      .card__title {
+        font-size: 2.5rem;
+        transform: var(--level-three);
+        order: 2;
+        text-transform: uppercase;
+      }
+      
+      .card__subtitle {
+        transform: var(--level-two);
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: .75rem;
+        font-weight: var(--fw-bold);
+        opacity: .7;
+      }
+      
+      .card__body {
+        transform: var(--level-two);
+        font-weight: var(fw-normal);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      
+      
+      
+      .card__back {
+        transform: rotateY(.5turn);
+        color: var(--clr);
+        background: #333;
+      }
+      @media screen and (max-width:700px) {
         &{
           display: flex;
           justify-content: center;
@@ -1089,13 +1089,23 @@
           flex-direction: column;
           font-size: .88rem;
 
+          .card{
+            width: 18rem;
+
+            h3{
+              font-size: 2rem;
+            }
+            p{
+              font-size: 1rem;
+            }
+          }
         }
         &>*{
           margin-bottom: 2rem;
         }
       }
 
-      @media screen and (min-width:670px)  and (max-width:1000px) {
+      @media screen and (min-width:700px)  and (max-width:1215px) {
         &{
           grid-template-columns: repeat(2,1fr);
           grid-gap: 1rem;
@@ -1106,7 +1116,7 @@
           }
         }
       }
-      @media screen and (min-width:1000px)  and (max-width:1360px) {
+      @media screen and (min-width:1215px)  and (max-width:1560px) {
         &{
           grid-template-columns: repeat(3,1fr);
           grid-gap: 1rem;
@@ -1118,7 +1128,7 @@
           margin-top: 2rem;
         }
       }
-      @media screen and (min-width:1360px)  and (max-width:1650px) {
+      @media screen and (min-width:1560px)  and (max-width:2000px) {
         &{
           grid-template-columns: repeat(4,1fr);
         }
@@ -1126,13 +1136,27 @@
           margin-bottom: 2rem;
         }
       }
-      @media screen and (min-width:1650px) {
+      @media screen and (min-width:2000px) {
         &{
           grid-template-columns: repeat(5,1fr);
         }
           &>*{
             margin-bottom: 2rem;
           }
+      }
+      @media screen and (max-width:500px) {
+        &{
+          .card{
+            width: 18rem;
+
+            h3{
+              font-size: 2rem;
+            }
+            p{
+              font-size: 1rem;
+            }
+          }
+        }
       }
     }
   }

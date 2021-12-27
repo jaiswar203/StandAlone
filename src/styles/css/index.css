@@ -13,6 +13,15 @@ body {
   background-color: #212121;
 }
 
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --clr: #c1b19d;
+}
+
 .loader {
   height: 100vh;
   display: -webkit-box;
@@ -741,6 +750,12 @@ a {
           flex-direction: column;
 }
 
+@media screen and (min-width: 1400px) {
+  .home-midvid-video {
+    padding: 3rem 15rem;
+  }
+}
+
 .home-midvid-video video {
   width: 100%;
   right: 0;
@@ -1390,7 +1405,6 @@ a {
 }
 
 .about-team-content {
-  background-color: #F79824;
   padding: 2rem;
   display: -ms-grid;
   display: grid;
@@ -1400,111 +1414,100 @@ a {
 }
 
 .about-team-content .card {
-  position: relative;
-  height: 25rem;
-  width: 18.75rem;
-  background: #31393c;
-  border-radius: 20px;
-  -webkit-box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5), 5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5), 5px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 21rem;
 }
 
-.about-team-content .card .info {
-  position: relative;
-  height: 65%;
-  width: 100%;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  opacity: 0;
-}
-
-.about-team-content .card .info p {
-  position: relative;
-  padding: 25px;
-  color: #fff;
-}
-
-.about-team-content .card .info ul {
-  height: 6.25rem;
-  width: 100%;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 50px;
-}
-
-.about-team-content .card .info ul li {
-  font-size: 1.2rem;
-  margin-left: 15px;
-  color: black;
-  text-shadow: -2px -2px 5px rgba(255, 255, 255, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.5);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.about-team-content .card .info ul li i {
-  font-size: 2rem;
-}
-
-.about-team-content .card .info ul li:hover {
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-  color: #F79824;
-}
-
-.about-team-content .card .layer {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.about-team-content .card .layer img {
-  margin-left: 3rem;
-  margin-top: 3rem;
-  border-radius: 50%;
-}
-
-.about-team-content .card .layer h1 {
+.about-team-content .card__content {
   text-align: center;
-  color: white;
-  letter-spacing: 3px;
-  margin-top: 1rem;
+  position: relative;
+  padding: 15em 5em;
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
-.about-team-content .card:hover .layer {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  margin-top: -35%;
+.about-team-content .card:hover .card__content {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
 }
 
-.about-team-content .card:hover .info {
-  -webkit-transform: translateY(70%);
-          transform: translateY(70%);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 1;
+.about-team-content .card__front,
+.about-team-content .card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-@media screen and (max-width: 670px) {
+.about-team-content .card__front {
+  background-color: var(--clr);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.about-team-content .card__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  -webkit-transform: var(--level-one);
+          transform: var(--level-one);
+}
+
+.about-team-content .card__title {
+  font-size: 2.5rem;
+  -webkit-transform: var(--level-three);
+          transform: var(--level-three);
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-transform: uppercase;
+}
+
+.about-team-content .card__subtitle {
+  -webkit-transform: var(--level-two);
+          transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: var(--fw-bold);
+  opacity: .7;
+}
+
+.about-team-content .card__body {
+  -webkit-transform: var(--level-two);
+          transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-team-content .card__back {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+  color: var(--clr);
+  background: #333;
+}
+
+@media screen and (max-width: 700px) {
   .about-team-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1521,12 +1524,21 @@ a {
             flex-direction: column;
     font-size: .88rem;
   }
+  .about-team-content .card {
+    width: 18rem;
+  }
+  .about-team-content .card h3 {
+    font-size: 2rem;
+  }
+  .about-team-content .card p {
+    font-size: 1rem;
+  }
   .about-team-content > * {
     margin-bottom: 2rem;
   }
 }
 
-@media screen and (min-width: 670px) and (max-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1215px) {
   .about-team-content {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -1542,7 +1554,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1360px) {
+@media screen and (min-width: 1215px) and (max-width: 1560px) {
   .about-team-content {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -1556,7 +1568,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1360px) and (max-width: 1650px) {
+@media screen and (min-width: 1560px) and (max-width: 2000px) {
   .about-team-content {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -1566,13 +1578,25 @@ a {
   }
 }
 
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 2000px) {
   .about-team-content {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
   }
   .about-team-content > * {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-team-content .card {
+    width: 18rem;
+  }
+  .about-team-content .card h3 {
+    font-size: 2rem;
+  }
+  .about-team-content .card p {
+    font-size: 1rem;
   }
 }
 

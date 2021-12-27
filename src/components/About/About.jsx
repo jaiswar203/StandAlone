@@ -80,11 +80,15 @@ const About = () => {
                     <h1>Our Team</h1>
                 </div>
                 <div className="about-team-content" data-aos="zoom-in-up">
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640504328/person-image-icon-2_nmkt36.png"} />
+                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
+                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
+                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
+                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
+                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
+                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
+                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
+                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
+                    
                 </div>
             </div>
         </div>
