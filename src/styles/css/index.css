@@ -489,6 +489,15 @@ a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .header .nav ul li a {
+    font-size: 1.3rem;
+  }
+  .header .nav ul {
+    top: 55%;
+  }
+}
+
 /************************Home ***************************/
 .home-video {
   position: relative;

@@ -16,27 +16,26 @@ const store = createStore(reducer, compose(applyMiddleware(thunk)));
 
 function MyApp({ Component, pageProps }) {
   const [loading, setloading] = useState(false);
-  const [preLoader, setpreLoader] = useState(true)
+  const [preLoader, setpreLoader] = useState(true);
   useEffect(() => {
-    setTimeout(()=>{
-      setpreLoader(false)
-    },[3000])
+    setTimeout(() => {
+      setpreLoader(false);
+    }, [3000]);
   }, [loading]);
-  Router.events.on("routeChangeStart",(url)=>{
-      setloading(true);
-  })
-  Router.events.on("routeChangeComplete",(url)=>{
-    setTimeout(()=>{
-      setloading(false)
-    },[3000])
-  })
-  if(preLoader){
+  Router.events.on("routeChangeStart", (url) => {
+    setloading(true);
+  });
+  Router.events.on("routeChangeComplete", (url) => {
+    setTimeout(() => {
+      setloading(false);
+    }, [3000]);
+  });
+  if (preLoader) {
     return (
-        <div className="loader">
-          <HashLoader loading={preLoader} size={150} color={"#F79824"} />
-        </div>
-
-    )
+      <div className="loader">
+        <HashLoader loading={preLoader} size={150} color={"#F79824"} />
+      </div>
+    );
   }
   return (
     <>
@@ -45,7 +44,6 @@ function MyApp({ Component, pageProps }) {
           <HashLoader loading={loading} size={150} color={"#F79824"} />
         </div>
       ) : (
-        
         <Provider store={store}>
           <Component {...pageProps} loading={loading} />
         </Provider>
