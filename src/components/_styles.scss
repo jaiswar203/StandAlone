@@ -1787,6 +1787,7 @@
         object-fit: cover;
       }
     }
+
   }
 
   &-details {
@@ -1960,6 +1961,40 @@
     }
   }
 
+  &-rules{
+    &-heading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      
+      h1{
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+
+    &-content{
+      ul{
+        padding: 2rem;
+        list-style: disc;
+
+        
+        li::marker{
+          color: $primary-color;
+          font-size: 1.6rem;
+        }
+        li{
+          color: white;
+          margin-bottom: 1rem;
+
+          p{
+            // text-align: center;
+          }
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 700px) {
     &-jury {
       font-size: 0.8rem;
@@ -1977,6 +2012,7 @@
       }
     }
   }
+  
 }
 
 .awards {

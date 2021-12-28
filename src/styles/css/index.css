@@ -2578,6 +2578,38 @@ a {
           align-items: center;
 }
 
+.event-rules-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.event-rules-heading h1 {
+  border-bottom: 2px solid #F79824;
+}
+
+.event-rules-content ul {
+  padding: 2rem;
+  list-style: disc;
+}
+
+.event-rules-content ul li::marker {
+  color: #F79824;
+  font-size: 1.6rem;
+}
+
+.event-rules-content ul li {
+  color: white;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 700px) {
   .event-jury {
     font-size: 0.8rem;

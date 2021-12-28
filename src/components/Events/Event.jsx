@@ -60,9 +60,9 @@ const Event = () => {
                                             <i className="fab fa-facebook"></i>
                                         </div>
                                     </div> */}
-                                    
-                                        <h3>{d.name}</h3>
-                                    
+
+                                    <h3>{d.name}</h3>
+
                                 </SwiperSlide>
                             ))
                         }
@@ -97,7 +97,42 @@ const Event = () => {
                 </div>
             </div>
             <div className="event-rules">
-                
+                <div className="event-rules-heading">
+                    <h1>Rules</h1>
+                </div>
+                <div className="event-rules-content">
+                    <ul>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus nesciunt odio voluptas assumenda quo, a soluta veniam cum dolor praesentium accusamus illum aspernatur delectus tempora beatae earum repellat eos.
+                                Itaque sequi suscipit tenetur est dolores qui excepturi natus nostrum ab laboriosam exercitationem eius iure quam aliquam non, pariatur perspiciatis ex nesciunt, cumque aperiam culpa necessitatibus nisi! Quis, dignissimos numquam.
+                                Velit suscipit rem beatae sint quia rerum exercitationem corporis enim quae a ad delectus quis, perferendis, eveniet numquam inventore! Soluta sequi dolores cumque minima enim architecto facilis obcaecati consectetur vitae.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus nesciunt odio voluptas assumenda quo, a soluta veniam cum dolor praesentium accusamus illum aspernatur delectus tempora beatae earum repellat eos.
+                                Itaque sequi suscipit tenetur est dolores qui excepturi natus nostrum ab laboriosam exercitationem eius iure quam aliquam non, pariatur perspiciatis ex nesciunt, cumque aperiam culpa necessitatibus nisi! Quis, dignissimos numquam.
+                                Velit suscipit rem beatae sint quia rerum exercitationem corporis enim quae a ad delectus quis, perferendis, eveniet numquam inventore! Soluta sequi dolores cumque minima enim architecto facilis obcaecati consectetur vitae.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus nesciunt odio voluptas assumenda quo, a soluta veniam cum dolor praesentium accusamus illum aspernatur delectus tempora beatae earum repellat eos.
+                                Itaque sequi suscipit tenetur est dolores qui excepturi natus nostrum ab laboriosam exercitationem eius iure quam aliquam non, pariatur perspiciatis ex nesciunt, cumque aperiam culpa necessitatibus nisi! Quis, dignissimos numquam.
+                                Velit suscipit rem beatae sint quia rerum exercitationem corporis enim quae a ad delectus quis, perferendis, eveniet numquam inventore! Soluta sequi dolores cumque minima enim architecto facilis obcaecati consectetur vitae.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus nesciunt odio voluptas assumenda quo, a soluta veniam cum dolor praesentium accusamus illum aspernatur delectus tempora beatae earum repellat eos.
+                                Itaque sequi suscipit tenetur est dolores qui excepturi natus nostrum ab laboriosam exercitationem eius iure quam aliquam non, pariatur perspiciatis ex nesciunt, cumque aperiam culpa necessitatibus nisi! Quis, dignissimos numquam.
+                                Velit suscipit rem beatae sint quia rerum exercitationem corporis enim quae a ad delectus quis, perferendis, eveniet numquam inventore! Soluta sequi dolores cumque minima enim architecto facilis obcaecati consectetur vitae.
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     )

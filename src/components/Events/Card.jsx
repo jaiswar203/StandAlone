@@ -15,7 +15,7 @@ const Card = ({link,aos}) => {
                     <p className="title">The Overstory</p>
                     <div className="separator" />
                     <p className="info">New York, NY</p>
-                    <p className="price">29$</p>
+                    {/* <p className="price">29$</p> */}
                     <div className="additional-info">
                         <p className="info">
                             <i className="fas fa-map-marker-alt" />
