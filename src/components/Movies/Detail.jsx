@@ -12,8 +12,8 @@ const Detail = ({ data }) => {
                 <h1>Top Rated</h1>
             </div>
             <div className="movies-details-grid">
-                {data.map((d) => (
-                    <div className='movies-details-grid-item' data-aos="zoom-in-up" >
+                {data.map((d,i) => (
+                    <div className='movies-details-grid-item' data-aos="zoom-in-up"  key={i}>
                         <Image src={d.link} width={200} height={300} />
                         <div className="detail">
                             <h3>{d.name}</h3>
