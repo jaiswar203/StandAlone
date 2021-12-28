@@ -1,59 +1,51 @@
-import Link from "next/link"
-import Aos from "aos"
+import Link from 'next/link'
+import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className='footer' >
-            <div className="footer-link">
-                <Link href="/" passHref>Home</Link>
-                <Link href="/about" passHref>About</Link>
-                <Link href="/movies" passHref>Movies</Link>
-                <Link href="/upcoming" passHref>Upcoming Events</Link>
-                <Link href="/awards" passHref>Awards</Link>
-                <Link href="/gallery" passHref>Gallery</Link>
-            </div>
-            <div className="footer-detail">
-                <div className="footer-detail-icon">
-                    <a href="#">
-                        <div className="footer-detail-icon-item">
-                            <i className="fab fa-facebook-f"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div className="footer-detail-icon-item">
-                            <i className="fab fa-instagram"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div className="footer-detail-icon-item">
-                            <i className="fab fa-linkedin-in"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div className="footer-detail-icon-item">
-                            <i className="fab fa-twitter"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div className="footer-detail-icon-item">
-                            <i className="fab fa-youtube"></i>
-                        </div>
-                    </a>
+        <footer className='footer'>
+            <div className="footer-upper">
+                <div className="footer-upper-icon">
+                    <i className="fab fa-instagram" />
+                    <i className="fab fa-facebook" />
+                    <i className="fab fa-twitter" />
+                    <i className="fab fa-pinterest" />
                 </div>
-
-                <div className="footer-detail-title">
-                    <h3>STANDALONE FILM FESTIVAL & AWARDS</h3>
+                <div className="footer-upper-link">
+                    <Link href={"/"} passHref>
+                        Home
+                    </Link>
+                    <Link href={"/movies"} passHref>
+                        Movies
+                    </Link>
+                    <Link href={"/awards"} passHref>
+                        Awards
+                    </Link>
+                    <Link href={"/upcoming"} passHref>
+                        Events
+                    </Link>
                 </div>
-                <div className="footer-detail-address">
-                    <p>710 EAST COMMERCIAL STREET, LOS ANGELES, CA 90012 | 10A, GURUNAGAR SOCIETY, J P ROAD, FOUR BUNGALOW, ANDHERI (W) MUMBAI</p>
-                </div>
-                <div className="footer-detail-number">
-                    <a href="tel:">+918838838384</a> || <a href="tel:">+918838838384</a>
+                <div className="footer-upper-sublink">
+                    <Link href={"/gallery"} passHref>
+                        Gallery
+                    </Link>
+                    <div className="line">
+                        ||
+                    </div>
+                    <Link href={"/about"} passHref>
+                        About
+                    </Link>
+                    <div className="line">
+                        ||
+                    </div>
+                    <Link href={"/contact"} passHref>
+                        Contact
+                    </Link>
                 </div>
             </div>
-            <div className="footer-copyright">
-                <h4>COPYRIGHT ©2021 STANDALONE FILM FESTIVAL & AWARDS - ALL RIGHTS RESERVED.</h4>
-                <h4>POWERED BY STANDALONE STREAM</h4>
+            <div className="footer-lower">
+                <h2>StandAlone Film Festival,Lorem ipsum dolor sit amet consectetur, </h2>
+                <p>@StandAlone Film Festival | All RIghts Reserved </p>
             </div>
         </footer>
     )
