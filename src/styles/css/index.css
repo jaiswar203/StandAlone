@@ -107,11 +107,11 @@ a {
 .header h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 7vw;
+  font-size: 2rem;
   line-height: 1;
   color: #ffeba7;
   text-align: center;
-  -webkit-text-stroke: 2px #ffeba7;
+  -webkit-text-stroke: 2px black;
   text-stroke: 2px #ffeba7;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
@@ -299,6 +299,32 @@ a {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   list-style: none;
+}
+
+.header .nav ul .image {
+  position: relative;
+}
+
+.header .nav ul .image:first-child {
+  top: 13rem;
+  left: -23rem;
+}
+
+.header .nav ul .image:last-child {
+  top: -21rem;
+  left: 24rem;
+}
+
+@media screen and (max-width: 1192px) {
+  .header .nav ul .image h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header .nav ul .image {
+    display: none;
+  }
 }
 
 .header .nav ul li {
@@ -1083,6 +1109,48 @@ a {
   }
 }
 
+.home-submit {
+  margin-top: 2rem;
+}
+
+.home-submit-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  color: white;
+}
+
+.home-submit-content {
+  margin: 3rem;
+  padding: 2rem;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F79824;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .home-submit {
+    font-size: .8rem;
+  }
+  .home-submit-content {
+    margin: 1rem;
+    padding: 1rem .5rem;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1522,6 +1590,7 @@ a {
   font-size: 0.75rem;
   font-weight: var(--fw-bold);
   opacity: 0.7;
+  color: white;
 }
 
 .about-team-content .card__body {
@@ -1531,6 +1600,32 @@ a {
   font-size: 1rem;
   color: #F79824;
   line-height: 1.6;
+}
+
+.about-team-content .card__body p {
+  color: white;
+}
+
+.about-team-content .card__body .links {
+  margin-top: 2rem;
+}
+
+.about-team-content .card__body .links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-team-content .card__body .links i {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+
+.about-team-content .card__body .links i:hover {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  color: white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .about-team-content .card__back {
@@ -1660,6 +1755,10 @@ a {
   color: white;
 }
 
+.movies-carousel-heading h4 {
+  cursor: pointer;
+}
+
 .movies-carousel-content {
   border-radius: 20px;
   margin-top: 3rem;
@@ -1714,6 +1813,173 @@ a {
   .movies {
     padding: 1rem;
     font-size: 0.8rem;
+  }
+}
+
+.movies-details {
+  padding: 3rem;
+}
+
+.movies-details-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.movies-details-heading h1 {
+  border-bottom: 2px solid #F79824;
+}
+
+.movies-details-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  border-radius: 20px;
+  padding: 2rem;
+  background-color: #F79824;
+}
+
+.movies-details-grid-item {
+  margin-bottom: 2rem;
+}
+
+.movies-details-grid-item img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.movies-details-grid-item .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.movies-details-grid-item .detail .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #31393c;
+  margin-top: 0.1rem;
+}
+
+.movies-details-grid-item .detail .rating p {
+  font-weight: 600;
+}
+
+.movies-details-grid-item .detail .rating > * {
+  margin-right: 0.3rem;
+}
+
+@media screen and (min-width: 390px) and (max-width: 550px) {
+  .movies-details {
+    padding: 1rem;
+  }
+  .movies-details-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+  .movies-details-grid .detail {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .movies-details {
+    padding: 1rem;
+  }
+  .movies-details-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+  }
+  .movies-details-grid .detail {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .movies-details {
+    padding: 1rem;
+  }
+  .movies-details-grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1400px) {
+  .movies-details {
+    padding: 1rem;
+  }
+  .movies-details-grid {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+  .movies-details {
+    padding: 1rem;
+  }
+  .movies-details-grid {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 2000px) {
+  .movies-details {
+    padding: 1rem;
+  }
+  .movies-details-grid {
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .movies-details {
+    padding: 1rem;
+  }
+  .movies-details-grid {
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+    grid-gap: 0.5rem;
+  }
+  .movies-details-grid .detail {
+    font-size: 1.2rem;
   }
 }
 

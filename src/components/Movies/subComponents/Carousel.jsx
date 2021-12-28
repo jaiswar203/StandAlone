@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 SwiperCore.use([Autoplay])
 
-const Carousel = ({ data, heading,speed }) => {
+const Carousel = ({ data, heading, speed, link }) => {
     const breakpoints = {
         "380": {
             slidesPerView: 2
@@ -15,34 +15,34 @@ const Carousel = ({ data, heading,speed }) => {
         "600": {
             slidesPerView: 3
         },
-        "900":{
+        "900": {
             slidesPerView: 4
         },
-        "1100":{
+        "1100": {
             slidesPerView: 5
         },
-        "1300":{
+        "1300": {
             slidesPerView: 6
         },
-        "1600":{
+        "1600": {
             slidesPerView: 7
         },
     }
-    useEffect(()=>{
-       Aos.init() 
-    },[])
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return (
         <>
             <div className="movies-carousel-heading">
                 <h2>{heading}</h2>
-                <Link href={"#"}>
+                <Link href={link ? `/movies/${link}` : "/"}>
                     <h4>See More</h4>
                 </Link>
             </div>
             <div className="movies-carousel-content" data-aos="zoom-in">
-                <Swiper slidesPerView={1} spaceBetween={10} autoplay speed={ speed ? speed : 600} breakpoints={breakpoints} >
+                <Swiper slidesPerView={1} spaceBetween={10} autoplay speed={speed ? speed : 600} breakpoints={breakpoints} >
                     {
-                        data.map((d,i) => (
+                        data.map((d, i) => (
                             <SwiperSlide className='movies-carousel-content-item' key={i}>
                                 <Image src={d.link} width={200} height={300} />
                                 <div className="detail">

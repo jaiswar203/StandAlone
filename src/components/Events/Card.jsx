@@ -28,7 +28,6 @@ const Card = ({link,aos}) => {
                         <p className="info description">
                             Welcome! Everyone has a unique perspective after reading a book, and
                             we would love you to share yours with us! We meet one Sunday evening{" "}
-                            
                         </p>
                     </div>
                 </div>

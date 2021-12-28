@@ -98,9 +98,9 @@ const Event = () => {
             </div>
             <div className="event-rules">
                 <div className="event-rules-heading">
-                    <h1>Rules</h1>
+                    <h1>Terms & Condition</h1>
                 </div>
-                <div className="event-rules-content">
+                <div className="event-rules-content" data-aos="zoom-in-up">
                     <ul>
                         <li>
                             <p>
