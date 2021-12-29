@@ -19,9 +19,7 @@ const Navbar = () => {
             <label htmlFor="menu-icon" />
             <nav className="nav">
                 <ul className="pt-5">
-                    <div className="image">
-                        <h1>Welcome to StandAlone</h1>
-                    </div>
+                    
                     <li>
                         <Link passHref href="/" >Home</Link>
                     </li>
@@ -43,9 +41,7 @@ const Navbar = () => {
                     <li>
                         <Link passHref href="/contact" >Contact</Link>
                     </li>
-                    <div className="image">
-                        <h1>Welcome to StandAlone</h1>
-                    </div>
+
                 </ul>
             </nav>
         </header>

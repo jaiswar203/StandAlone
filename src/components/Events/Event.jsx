@@ -101,38 +101,52 @@ const Event = () => {
                     <h1>Terms & Condition</h1>
                 </div>
                 <div className="event-rules-content" data-aos="zoom-in-up">
-                    <ul>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus nesciunt odio voluptas assumenda quo, a soluta veniam cum dolor praesentium accusamus illum aspernatur delectus tempora beatae earum repellat eos.
-                                Itaque sequi suscipit tenetur est dolores qui excepturi natus nostrum ab laboriosam exercitationem eius iure quam aliquam non, pariatur perspiciatis ex nesciunt, cumque aperiam culpa necessitatibus nisi! Quis, dignissimos numquam.
-                                Velit suscipit rem beatae sint quia rerum exercitationem corporis enim quae a ad delectus quis, perferendis, eveniet numquam inventore! Soluta sequi dolores cumque minima enim architecto facilis obcaecati consectetur vitae.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus nesciunt odio voluptas assumenda quo, a soluta veniam cum dolor praesentium accusamus illum aspernatur delectus tempora beatae earum repellat eos.
-                                Itaque sequi suscipit tenetur est dolores qui excepturi natus nostrum ab laboriosam exercitationem eius iure quam aliquam non, pariatur perspiciatis ex nesciunt, cumque aperiam culpa necessitatibus nisi! Quis, dignissimos numquam.
-                                Velit suscipit rem beatae sint quia rerum exercitationem corporis enim quae a ad delectus quis, perferendis, eveniet numquam inventore! Soluta sequi dolores cumque minima enim architecto facilis obcaecati consectetur vitae.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus nesciunt odio voluptas assumenda quo, a soluta veniam cum dolor praesentium accusamus illum aspernatur delectus tempora beatae earum repellat eos.
-                                Itaque sequi suscipit tenetur est dolores qui excepturi natus nostrum ab laboriosam exercitationem eius iure quam aliquam non, pariatur perspiciatis ex nesciunt, cumque aperiam culpa necessitatibus nisi! Quis, dignissimos numquam.
-                                Velit suscipit rem beatae sint quia rerum exercitationem corporis enim quae a ad delectus quis, perferendis, eveniet numquam inventore! Soluta sequi dolores cumque minima enim architecto facilis obcaecati consectetur vitae.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus nesciunt odio voluptas assumenda quo, a soluta veniam cum dolor praesentium accusamus illum aspernatur delectus tempora beatae earum repellat eos.
-                                Itaque sequi suscipit tenetur est dolores qui excepturi natus nostrum ab laboriosam exercitationem eius iure quam aliquam non, pariatur perspiciatis ex nesciunt, cumque aperiam culpa necessitatibus nisi! Quis, dignissimos numquam.
-                                Velit suscipit rem beatae sint quia rerum exercitationem corporis enim quae a ad delectus quis, perferendis, eveniet numquam inventore! Soluta sequi dolores cumque minima enim architecto facilis obcaecati consectetur vitae.
-                            </p>
-                        </li>
-                    </ul>
+                    <div className="event-rules-content-left" data-aos={`zoom-in`} >
+                        <ul>
 
+                            <li>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, quidem ducimus eveniet quam ullam repellat dicta delectus earum velit repudiandae fugit, doloribus, reprehenderit laborum vel fuga dolor sapiente. Incidunt, suscipit.</p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, quidem ducimus eveniet quam ullam repellat dicta delectus earum velit repudiandae fugit, doloribus, reprehenderit laborum vel fuga dolor sapiente. Incidunt, suscipit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="event-rules-content-right" data-aos={`zoom-in-down`}>
+                        <ul>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quae laudantium iusto voluptatem? Aut exercitationem doloribus quos. Beatae est facilis, quaerat cum sunt consectetur iusto aliquam illo quos soluta sint?</p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quae laudantium iusto voluptatem? Aut exercitationem doloribus quos. Beatae est facilis, quaerat cum sunt consectetur iusto aliquam illo quos soluta sint?</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div className="event-rules-content" data-aos="zoom-in-up">
+                    <div className="event-rules-content-left" data-aos={`zoom-in`} >
+                        <ul>
+
+                            <li>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, quidem ducimus eveniet quam ullam repellat dicta delectus earum velit repudiandae fugit, doloribus, reprehenderit laborum vel fuga dolor sapiente. Incidunt, suscipit.</p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, quidem ducimus eveniet quam ullam repellat dicta delectus earum velit repudiandae fugit, doloribus, reprehenderit laborum vel fuga dolor sapiente. Incidunt, suscipit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="event-rules-content-right" data-aos={`zoom-in-down`}>
+                        <ul>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quae laudantium iusto voluptatem? Aut exercitationem doloribus quos. Beatae est facilis, quaerat cum sunt consectetur iusto aliquam illo quos soluta sint?</p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quae laudantium iusto voluptatem? Aut exercitationem doloribus quos. Beatae est facilis, quaerat cum sunt consectetur iusto aliquam illo quos soluta sint?</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
         </div>
     )
