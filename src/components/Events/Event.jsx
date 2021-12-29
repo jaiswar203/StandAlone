@@ -74,10 +74,10 @@ const Event = () => {
                     <h1>Upcoming Events</h1>
                 </div>
                 <div className="container">
-                    <Card link={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640527707/samples/img2_g1idvp.jpg"} />
-                    <Card link={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640527709/samples/img3_h5cdki.jpg"} />
-                    <Card link={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640527707/samples/img1_ulzwqb.jpg"} />
-                    <Card link={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640527706/samples/img4_xj7kg6.jpg"} />
+                    <Card link={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640527707/samples/img2_g1idvp.jpg"} title={"Submission Opening"} desc={"We invite you to submit your films free"} date={"Nov 11"} day={"2021"} city={"New York, NY"} redirect={"https://www.FilmFreeway.com"} />
+                    <Card link={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640527707/samples/img2_g1idvp.jpg"} title={"Early Bird Deadline"} desc={"Last Date for Free Submission"} date={"Nov 30"} day={"2021"} city={"New York, NY"} redirect={"https://www.FilmFreeway.com"} />
+                    <Card link={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640527707/samples/img2_g1idvp.jpg"} title={"Regular Deadline"} desc={"Last Date for Regular Submission"} date={"Dec 20"} day={"2021"} city={"New York, NY"} redirect={"https://www.FilmFreeway.com"} />
+                    <Card link={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640527707/samples/img2_g1idvp.jpg"} title={"Submission Opening"} desc={"We invite you to submit your films free"} date={"Nov 11"} day={"2021"} city={"New York, NY"} redirect={"https://www.FilmFreeway.com"} />
                 </div>
             </div>
             <div className="event-submit">

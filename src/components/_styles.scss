@@ -200,7 +200,7 @@
     font-weight: 800;
     display: inline-block;
     position: relative;
-    color: $text-color;
+    color: white;
     transition: all 250ms linear;
   }
 
@@ -1993,6 +1993,8 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+
+      
     }
 
     .item-container {
@@ -2108,6 +2110,11 @@
       font-weight: bold;
       letter-spacing: 2px;
       transition: background-color 0.4s, top 0.4s;
+
+      a{
+        text-decoration: none;
+        color: $primary-color
+      }
     }
 
     .item-container:hover .action {

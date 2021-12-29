@@ -2,7 +2,7 @@ import Image from "next/image"
 
 
 
-const Card = ({link,aos}) => {
+const Card = ({link,aos,title,city,day,date,time,format,desc,redirect}) => {
     
     return (
         <div className="item-container" data-aos={aos ? aos : "zoom-in"}>
@@ -12,26 +12,27 @@ const Card = ({link,aos}) => {
             <div className="body-container" >
                 <div className="overlay" />
                 <div className="event-info">
-                    <p className="title">The Overstory</p>
+                    <p className="title">{title}</p>
                     <div className="separator" />
-                    <p className="info">New York, NY</p>
+                    <p className="info">{city}</p>
                     {/* <p className="price">29$</p> */}
                     <div className="additional-info">
-                        <p className="info">
+                        {/* <p className="info">
                             <i className="fas fa-map-marker-alt" />
-                            245 W 52nd St, New York
-                        </p>
+                            {add}
+                        </p> */}
                         <p className="info">
                             <i className="far fa-calendar-alt" />
-                            Sat, Sep 19, 10:00 AM EDT
+                            {day}, {date}, {time} {format}
                         </p>
                         <p className="info description">
-                            Welcome! Everyone has a unique perspective after reading a book, and
-                            we would love you to share yours with us! We meet one Sunday evening{" "}
+                            {desc}
                         </p>
                     </div>
                 </div>
-                <button className="action">Visit</button>
+                <button className="action">
+                    <a href={redirect}>Visit</a>
+                </button>
             </div>
         </div> 
     )

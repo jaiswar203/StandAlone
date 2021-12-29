@@ -367,7 +367,7 @@ a {
   font-weight: 800;
   display: inline-block;
   position: relative;
-  color: #31393c;
+  color: white;
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
 }
@@ -2752,6 +2752,11 @@ a {
   letter-spacing: 2px;
   -webkit-transition: background-color 0.4s, top 0.4s;
   transition: background-color 0.4s, top 0.4s;
+}
+
+.event-details .action a {
+  text-decoration: none;
+  color: #F79824;
 }
 
 .event-details .item-container:hover .action {
