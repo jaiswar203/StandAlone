@@ -74,8 +74,9 @@ const About = () => {
                     <h1>Our Team</h1>
                 </div>
                 <div className="about-team-content" data-aos="zoom-in">
-                    {data.teams.map((d) => (
-                        <Card img={d.link} name={d.name} role={d.role} about={d.about} />
+                    {data.teams.map((d,i) => (
+                        
+                        <Card img={d.link} name={d.name} role={d.role} about={d.about} id={i} />
                     ))}
                 </div>
             </div>
