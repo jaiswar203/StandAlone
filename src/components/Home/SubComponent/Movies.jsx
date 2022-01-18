@@ -8,6 +8,7 @@ import { HeadingAOS, Visible } from '../hooks';
 import "swiper/css";
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
+import { data } from '../../../db/data';
 
 
 
@@ -39,45 +40,22 @@ const Movies = () => {
                             "depth": 100,
                             "modifier": 1,
                             "slideShadows": false
-                        }} pagination={false} className="mySwiper" loop={true} autoplay={{delay: 2000}}
+                        }} pagination={false} className="mySwiper" loop={true} autoplay={{ delay: 2000 }}
                             onActiveIndexChange={(en) => console.log(en.activeIndex, 'slide Changed')}
                             speed={600}
                         >
-                            <SwiperSlide className='home-movies-cards-center-items' >
-                                <img src="https://dancemaster.in/demo/wp-content/uploads/2021/11/latest-realse-1-768x768.jpg" />
-                                <div className="detail">
-                                    <h3>Movie Name</h3>
-                                    <p>SubDetail</p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide className='home-movies-cards-center-items' >
-                                <img src="https://dancemaster.in/demo/wp-content/uploads/2021/11/latest-realse-2-768x768.jpg" />
-                                <div className="detail">
-                                    <h3>Movie Name</h3>
-                                    <p>SubDetail</p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide className='home-movies-cards-center-items' >
-                                <img src="https://dancemaster.in/demo/wp-content/uploads/2021/11/latest-realse-1-768x768.jpg" />
-                                <div className="detail">
-                                    <h3>Movie Name</h3>
-                                    <p>SubDetail</p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide className='home-movies-cards-center-items' >
-                                <img src="https://dancemaster.in/demo/wp-content/uploads/2021/11/latest-realse-1-768x768.jpg" />
-                                <div className="detail">
-                                    <h3>Movie Name</h3>
-                                    <p>SubDetail</p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide className='home-movies-cards-center-items' >
-                                <img src="https://dancemaster.in/demo/wp-content/uploads/2021/11/latest-realse-2-768x768.jpg" />
-                                <div className="detail">
-                                    <h3>Movie Name</h3>
-                                    <p>SubDetail</p>
-                                </div>
-                            </SwiperSlide>
+                            {
+                                data.home.map((d, i) => (
+                                    <SwiperSlide className='home-movies-cards-center-items' key={i} >
+                                        <img src={d.link} />
+                                        <div className="detail">
+                                            <h3>{d.name}</h3>
+                                            
+                                        </div>
+                                    </SwiperSlide>
+
+                                ))
+                            }
                         </Swiper>
                     </div>
                 </div>

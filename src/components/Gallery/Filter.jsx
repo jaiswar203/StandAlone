@@ -15,26 +15,6 @@ const Filter = ({setImg}) => {
             id: 1,
             name: 'News',
         },
-        {
-            id: 2,
-            name: 'Lazarus',
-            
-        },
-        {
-            id: 3,
-            name: 'Pit',
-            
-        },
-        {
-            id: 4,
-            name: 'Zeus',
-            
-        },
-        {
-            id: 5,
-            name: 'DarkSeid',
-            
-        },
     ]
     const onClickHandler=(d,i)=>{
         setNum(i)
@@ -62,7 +42,7 @@ const Filter = ({setImg}) => {
             </div>
             <div className="gallery-filter-content">
                 {newData.map((d)=>(
-                    <Image src={d.link} alt={d.name} width={300} height={300}  key={d} data-aos="zoom-in" />
+                    <Image src={d.link} alt={d.name} width={300} height={300} objectFit='contain' key={d} data-aos="zoom-in"  />
                 ))}
             </div>
         </>

@@ -5,6 +5,7 @@ import Typist from "react-typist"
 
 import SwiperCore, { Autoplay } from 'swiper'
 import Card from "./Card"
+import { data } from "../../db/data"
 
 SwiperCore.use([Autoplay])
 
@@ -35,9 +36,10 @@ const About = () => {
                         </Typist>
                     </div>
                     <div className="about-intro-detail-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro labore doloremque fugit corrupti? Nulla illum eius odit? Maxime accusantium reiciendis tempora voluptatibus, molestiae, et excepturi ipsa quibusdam officiis fugiat architecto?
-                            Quisquam, nesciunt incidunt mollitia expedita accusamus quos voluptatem distinctio ducimus accusantium a laudantium explicabo dolore consectetur, voluptatibus ratione, quasi similique libero amet nobis quaerat. Eveniet quibusdam vel soluta nisi ex?
-                            Debitis tempore rerum neque, aspernatur necessitatibus aliquam dicta accusantium tenetur quasi eaque deserunt labore optio? Voluptatum nemo repellendus commodi reiciendis libero adipisci neque. Sapiente hic incidunt, numquam ipsa voluptatibus dolores!</p>
+                        <p>The Standalone Film Festival & Awards is one of the most Biggest International Independent film festival Awards .
+                            It provides a common platform for the cinemas of the world to project the excellence of the motion picture industry.  
+                            SFFA is designed for the independent films across the world giving them a platform to launch their movie worldwide. The films are the result of the persistent efforts of dreamers, from internet celebrities to famous directors who have been working in the film industry for half a century, all of whom have never forgotten their originality and promoting the culture of their country. 
+                            The Standalone Film Festival is an event unlike any other in the film industry, showing films from around the world for the public for a week so that people can contribute to the understanding and appreciation of film cultures of different nations and learn about their cultures, customs, women in the workplace, and art in other countries without traveling the world. Films from the U.S., Iran, India, China and Latin America are categorized by category. It also celebrates their films for the LGBT community.</p>
 
 
                     </div>
@@ -54,7 +56,7 @@ const About = () => {
                         <h2>Vision</h2>
                     </div>
                     <div className="about-detail-vision-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tempora repellat architecto accusamus beatae nisi aspernatur. Nam beatae dicta, dolorem rem ducimus repellat eaque, sunt placeat ab amet, quae laudantium?</p>
+                        <p>To make the dream come true of the independent movie makers so that they can launch their movies for which they have put their entire life.</p>
                     </div>
                 </div>
                 <div className="about-detail-mission" data-aos={`zoom-in-down`}>
@@ -62,7 +64,7 @@ const About = () => {
                         <h2>Mission</h2>
                     </div>
                     <div className="about-detail-mission-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tempora repellat architecto accusamus beatae nisi aspernatur. Nam beatae dicta, dolorem rem ducimus repellat eaque, sunt placeat ab amet, quae laudantium?</p>
+                        <p>To support Independent movie makers across globe to showcase their talent.</p>
                     </div>
                 </div>
             </div>
@@ -72,15 +74,9 @@ const About = () => {
                     <h1>Our Team</h1>
                 </div>
                 <div className="about-team-content" data-aos="zoom-in">
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
-                    <Card img={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png"} />
-                    
+                    {data.teams.map((d) => (
+                        <Card img={d.link} name={d.name} role={d.role} about={d.about} />
+                    ))}
                 </div>
             </div>
         </div>

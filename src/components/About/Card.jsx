@@ -1,17 +1,17 @@
 import Image from "next/image"
 
-const Card = ({ img }) => {
+const Card = ({ img,name,role,about }) => {
     return (
         <div className="card" data-aos="zoom-in">
             <div className="card__content">
                 <div className="card__front" style={{ backgroundImage: `url(${img})` }}>
-                    <h3 className="card__title">Jhon Doe</h3>
-                    <p className="card__subtitle">Web Developer</p>
+                    <h4 className="card__title">{name}</h4>
+                    <p className="card__subtitle">{role}</p>
                 </div>
                 <div className="card__back">
                     <div className="card__body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate cumque numquam exercitationem accusantium aspernatur, hic doloremque repellat! Ad quod, vel veritatis eos officia sint non eaque iste dignissimos doloremque.</p>
-                        <div className="links">
+                        <p>{about}</p>
+                        {/* <div className="links">
                             <a href="#">
                                 <i className="fab fa-instagram" />
                             </a>
@@ -24,7 +24,7 @@ const Card = ({ img }) => {
                             <a href="#">
                                 <i className="fab fa-pinterest" />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

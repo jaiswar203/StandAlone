@@ -40,7 +40,7 @@ const Grid = ({ data,setBlur,setImg,img }) => {
                     "depth": 100,
                     "modifier": 1,
                     "slideShadows": true
-                }} pagination={false} className="mySwiper" loop={false} autoplay={ img ? false : {  delay: 3000 }}
+                }} pagination={false} className="mySwiper" loop={false} autoplay={{delay: 2000}}
                     // onActiveIndexChange={(en) => console.log(en.activeIndex, 'slide Changed')}
                     speed={600}
                 >

@@ -7,10 +7,10 @@ const MidVid = () => {
 
     return (
         <>
-            <HeadingAOS title={"midvid"}>Info</HeadingAOS>
+            <HeadingAOS title={"midvid"}>Standalone</HeadingAOS>
             <Visible setIsVis={setIsVis}>
                 <div className="home-midvid-video">
-                    <video src="https://res.cloudinary.com/dykwfe4cr/video/upload/v1639933313/video_1_brqywe.mp4" loop autoPlay muted />
+                    <video src="https://res.cloudinary.com/standalone/video/upload/v1642352801/samples/WhatsApp_Video_2022-01-16_at_22.35.21_vsepvp.mp4" loop autoPlay muted />
                     <div className="home-midvid-video-detail">
                         <Typist avgTypingDelay={65} cursor={{ show: false }}>
                             <h1>A Beautyfull place to explore</h1>
